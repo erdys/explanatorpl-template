@@ -1,2 +1,8 @@
 @import "bootstrap-overrides";
+@import "template/vars";
+@import "template/mixin";
+@import "template/fonts";
 @import "template/main";
+@import "template/nav";
+@import "template/content";
+@import "template/forms";

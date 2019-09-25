@@ -1,0 +1,62 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$sprite-bg-panel-apps-name: 'sprite-bg_panel-apps';
+$sprite-bg-panel-apps-x: 0px;
+$sprite-bg-panel-apps-y: 0px;
+$sprite-bg-panel-apps-offset-x: 0px;
+$sprite-bg-panel-apps-offset-y: 0px;
+$sprite-bg-panel-apps-width: 263px;
+$sprite-bg-panel-apps-height: 161px;
+$sprite-bg-panel-apps-total-width: 468px;
+$sprite-bg-panel-apps-total-height: 377px;
+$sprite-bg-panel-apps-image: 'sprite-png.png';
+$sprite-bg-panel-apps: (0px, 0px, 0px, 0px, 263px, 161px, 468px, 377px, 'sprite-png.png', 'sprite-bg_panel-apps', );
+$sprite-bg-panel-newsletter-name: 'sprite-bg_panel-newsletter';
+$sprite-bg-panel-newsletter-x: 283px;
+$sprite-bg-panel-newsletter-y: 168px;
+$sprite-bg-panel-newsletter-offset-x: -283px;
+$sprite-bg-panel-newsletter-offset-y: -168px;
+$sprite-bg-panel-newsletter-width: 132px;
+$sprite-bg-panel-newsletter-height: 124px;
+$sprite-bg-panel-newsletter-total-width: 468px;
+$sprite-bg-panel-newsletter-total-height: 377px;
+$sprite-bg-panel-newsletter-image: 'sprite-png.png';
+$sprite-bg-panel-newsletter: (283px, 168px, -283px, -168px, 132px, 124px, 468px, 377px, 'sprite-png.png', 'sprite-bg_panel-newsletter', );
+$sprite-bg-panel-publications-name: 'sprite-bg_panel-publications';
+$sprite-bg-panel-publications-x: 0px;
+$sprite-bg-panel-publications-y: 181px;
+$sprite-bg-panel-publications-offset-x: 0px;
+$sprite-bg-panel-publications-offset-y: -181px;
+$sprite-bg-panel-publications-width: 197px;
+$sprite-bg-panel-publications-height: 196px;
+$sprite-bg-panel-publications-total-width: 468px;
+$sprite-bg-panel-publications-total-height: 377px;
+$sprite-bg-panel-publications-image: 'sprite-png.png';
+$sprite-bg-panel-publications: (0px, 181px, 0px, -181px, 197px, 196px, 468px, 377px, 'sprite-png.png', 'sprite-bg_panel-publications', );
+$sprite-bg-panel-toolbox-name: 'sprite-bg_panel-toolbox';
+$sprite-bg-panel-toolbox-x: 283px;
+$sprite-bg-panel-toolbox-y: 0px;
+$sprite-bg-panel-toolbox-offset-x: -283px;
+$sprite-bg-panel-toolbox-offset-y: 0px;
+$sprite-bg-panel-toolbox-width: 185px;
+$sprite-bg-panel-toolbox-height: 148px;
+$sprite-bg-panel-toolbox-total-width: 468px;
+$sprite-bg-panel-toolbox-total-height: 377px;
+$sprite-bg-panel-toolbox-image: 'sprite-png.png';
+$sprite-bg-panel-toolbox: (283px, 0px, -283px, 0px, 185px, 148px, 468px, 377px, 'sprite-png.png', 'sprite-bg_panel-toolbox', );
+$spritesheet-width: 468px;
+$spritesheet-height: 377px;
+$spritesheet-image: 'sprite-png.png';
+$spritesheet-sprites: ($sprite-bg-panel-apps, $sprite-bg-panel-newsletter, $sprite-bg-panel-publications, $sprite-bg-panel-toolbox, );
+$spritesheet: (468px, 377px, 'sprite-png.png', $spritesheet-sprites, );
+
+

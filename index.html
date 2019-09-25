@@ -18,30 +18,33 @@
 
 <body>
 
-<header class="header">
-    <section class="header__top">
+<header class="headersite">
+    <section class="headersite-top">
         <div class="container">
             <div class="row">
-                <ul>
-                    <li>biuro@explanator.pl</li>
-                    <li>tel. (61) 85 50 112</li>
-                    <li>Pomoc</li>
-                    <li>Koszyk (0)</li>
-                    <li>Szukaj</li>
+                <ul class="nav-help">
+                    <li class="nav-help-item"><a href="mailto:biuro@explanator.pl">biuro@explanator.pl</a></li>
+                    <li class="nav-help-item">tel. (61) 85 50 112</li>
+                    <li class="nav-help-item"><a href="#">Pomoc</a></li>
+                    <li class="nav-help-item"><a href="#">Koszyk (0)</a></li>
+                    <li class="nav-help-item"><a href="#">Szukaj</a></li>
                 </ul>
             </div>
         </div>
     </section>
-    <section class="header__bottom">
+    <section class="headersite-bottom">
         <div class="container">
             <div class="row">
+                <div class="logo">
+                    EXPLANATOR
+                </div>
                 <menu class="navbar">
-                    <ul class="navbar__inner">
-                        <li class="navbar__item"><a href="#">Szkolenia otwarte</a></li>
-                        <li class="navbar__item"><a href="#">Szkolenia zamknięte</a></li>
-                        <li class="navbar__item"><a href="#">Publikacje</a></li>
-                        <li class="navbar__item"><a href="#">O nas</a></li>
-                        <li class="navbar__item"><a href="#">Kontakt</a></li>
+                    <ul class="navbar-inner">
+                        <li class="navbar-item"><a href="courses_listing.html">Szkolenia otwarte</a></li>
+                        <li class="navbar-item"><a href="#">Szkolenia zamknięte</a></li>
+                        <li class="navbar-item"><a href="#">Publikacje</a></li>
+                        <li class="navbar-item"><a href="about_us.html">O nas</a></li>
+                        <li class="navbar-item"><a href="contact.html">Kontakt</a></li>
                     </ul>
                 </menu>
             </div>
@@ -52,37 +55,77 @@
 <secion class="promotional">
     <div class="container">
         <div class="row">
-            <div class="promotional__slider">
+            <div class="promotional-slider col-8">
                 <h2>Storytelling jako skuteczne narzędzie sprzedażowe</h2>
                 <p>Poznań, 27.09.2019</p>
                 <p>Pracujesz w sprzedaży? Jeśli tak, to z pewnością chcesz bić sprzedażowe rekordy, a także przewidywać, a nawet wyprzedzać oczekiwania klientów obecnych i przyszłych.</p>
             </div>
-            <div class="promotional__text">
-                <h2 class="title">Szkolenia zamknięte</h2>
-                <p>Explanator proponuje szkolenia zamknięte – formy ściśle dopasowane do kultury organizacyjnej i potrzeb Państwa przedsiębiorstw. Aby stworzyć szkolenie idealnie dopasowane do profilu firmy współpracujemy ściśle ze zleceniodawcą – tak na etapie definiowania potrzeb, jak i oceny efektywności szkolenia. oprzez nasze przywiązanie do praktycznego charakteru szkoleń „in company” wspomagamy realizację Państwa celów w zakresie rozwoju zawodowego kadr zarządzających i pracowników.</p>
-                <a href="#">Zobacz więcej</a>
+            <div class="promotional-text col">
+                <div class="header">
+                    <h3 class="header-title header-title--promotional"><span><a href="#">Szkolenia zamknięte</a></span></h3>
+                </div>
+                <p>Explanator proponuje <b>szkolenia zamknięte</b> – formy ściśle dopasowane do kultury organizacyjnej i potrzeb Państwa przedsiębiorstw. Aby stworzyć szkolenie idealnie dopasowane do profilu firmy współpracujemy ściśle ze zleceniodawcą – tak na etapie <b>definiowania potrzeb</b>, jak i <b>oceny efektywności szkolenia</b>. Poprzez nasze przywiązanie do <b>praktycznego charakteru szkoleń</b> „in company” wspomagamy realizację Państwa celów w zakresie <b>rozwoju zawodowego</b> kadr zarządzających i pracowników.</p>
+                <a href="#" class="btn btn-primary pull-right">Zobacz więcej</a>
             </div>
         </div>
     </div>
 </secion>
 
-<main class="list">
+<main class="boxlist">
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <h2>Polecane szkolenia</h2>
-            </div>
+        <div class="header center">
+            <h3 class="header-title header-title--name"><span>Polecane szkolenia</span></h3>
         </div>
         <div class="row">
             <div class="itembox">
-                photo - box
-                <h3>5. Forum Nowoczesnego Controllingu</h3>
-                <h3>Skuteczny controlling - rentowne przedsiębiorstwo. Koszty - oszczędności - optymalizacje</h3>
-                <p>Gdy pojawiają się pytania o rentowność i optymalizację, warto opierać decyzje na wartościowych źródłach wiedzy i przykładach dobrych praktyk. Bo jeśli optymalizować to tak, żeby być w stanie wypłynąć na spokojne wody nie tylko tu i teraz, ale również w dłuższej perspektywie. Dlatego też tegoroczne spotkanie controllerów, dyrektorów finansowych, księgowych oraz właścicieli firm skoncentruje się na temacie zwiększania skuteczności służb controllingowych.</p>
-                <div class="itembox__action">
-                    <p>Miejsce i termin:</p>
+                <div class="col-lg-4 itembox-image-hld">
+                    <span class="label label-itembox">forum</span>
+                    <img src="https://via.placeholder.com/350x288/ddd/000.png" />
                 </div>
+                <div class="col-lg-8 itembox-data">
+                    <div class="itembox-header">
+                        <h3 class="itembox-header-title">5. Forum Nowoczesnego Controllingu</h3>
+                        <h3 class="itembox-header-subtitle">Skuteczny controlling - rentowne przedsiębiorstwo. Koszty - oszczędności - optymalizacje</h3>
+                    </div>
+                    <div class="itembox-body">
+                        <div class="col-lg-7 itembox-content">
+                            <p>Gdy pojawiają się pytania o rentowność i optymalizację, warto opierać decyzje na wartościowych źródłach wiedzy i przykładach dobrych praktyk. Bo jeśli optymalizować to tak, żeby być w stanie wypłynąć na spokojne wody nie tylko tu i teraz, ale również w dłuższej perspektywie. Dlatego też tegoroczne spotkanie controllerów, dyrektorów finansowych, księgowych oraz właścicieli firm skoncentruje się na temacie zwiększania skuteczności służb controllingowych.</p>
+                        </div>
+                        <div class="col-lg-5 itembox-action">
+                            <p><b>Miejsce i termin:</b>
+                                <a href="#" class="itembox-action-item">Cała Polska <small>(szkolenie on-line)</small> 30.08.2019-20.09.2019</a>
+                            </p>
+                            <a href="courses_details.html" class="btn btn-border">Szczegóły</a>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+            <div class="itembox">
+                <div class="col-lg-4 itembox-image-hld">
+                    <span class="label label-itembox">e-kurs mailowy</span>
+                    <img src="https://via.placeholder.com/350x288/ddd/000.png" />
+                </div>
+                <div class="col-lg-8 itembox-data">
+                    <div class="itembox-header">
+                        <h3 class="itembox-header-title">Umowa zlecenia - przegląd ryzyk formalno-prawnych</h3>
+                        <h3 class="itembox-header-subtitle">Zagadnienia praktyczne, przegląd orzecznictwa, odpowiedzi na najważniejsze pytania</h3>
+                    </div>
+                    <div class="itembox-body">
+                        <div class="col-lg-7 itembox-content">
+                            <p>Zinteresowanie pracodawców umowami cywilno-prawnymi nie słabnie. Jednakże z każdą formą elastycznego zatrudnienia związane są liczne ryzyka. Możliwości popełnienia błędu skutkującego znaczącymi konsekwencjami prawnymi i finansowymi jest wyjątkowo duże. Dodatkowo pojawia się liczne orzecznictwo, które ma konkretny wpływ na praktykę zatrudniania pracowników.</p>
+                        </div>
+                        <div class="col-lg-5 itembox-action">
+                            <p><b>Miejsce i termin:</b>
+                                <a href="#" class="itembox-action-item">Poznań, 22.08.2019</a>
+                                <a href="#" class="itembox-action-item">Warszawa, 22-29.08.2019</a>
+                                <a href="#" class="itembox-action-item">Gdańsk, 4.09.2019</a>
+                            </p>
+                            <a href="courses_details.html" class="btn btn-border">Szczegóły</a>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -90,80 +133,108 @@
 
 <section class="insetbox">
     <div class="container">
+        <div class="header">
+            <h3 class="header-title header-title--simple">Zapisz się do newslettera</h3>
+        </div>
         <div class="row">
-            <h3>Zapisz się do newslettera</h3>
-            <p>Niezawodna informacja na temat wydarzeń branżowych, nowych publikacji i aktualizacji serwisu</p>
-            <form>
-                <input type="text" placeholder="Twój adres e-mail">
-                <button type="submit" class="btn btn-submit">Wyślij</button>
-            </form>
+            <div class="col-7">
+                <p>Niezawodna informacja na temat wydarzeń branżowych, nowych publikacji i aktualizacji serwisu</p>
+            </div>
+            <div class="col">
+                <form class="form-inline form-newsletter form-newsletter--main">
+                    <div class="form-group form-group-submit">
+                        <input type="email" class="form-control" placeholder="Twój adres e-mail">
+                        <button type="submit" class="btn btn-submit">Wyślij</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </section>
 
-
-<section class="theytrustedus">
+<section class="theytrusted">
     <div class="container">
+        <div class="header center">
+            <h3 class="header-title header-title--name"><span>Zaufali nam</span></h3>
+        </div>
         <div class="row">
-            logotypy scroll
+            <div class="col">
+                <p>logotypy scroll</p>
+            </div>
         </div>
     </div>
 </section>
 
 <section class="insetbox">
     <div class="container">
+        <div class="header">
+            <h3 class="header-title header-title--simple">Zostań wykładowcą</h3>
+        </div>
         <div class="row">
-            <h3>Zostań wykładowcą</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit nec odio efficitur congue. Proin eget quam nec ipsum egestas dapibus.</p>
-            <a href="#">Kontakt</a>
+            <div class="col">
+                <a href="contact.html" class="btn btn-primary btn-primary--white pull-right">Kontakt</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit nec odio efficitur congue. Proin eget quam nec ipsum egestas dapibus.</p>
+            </div>
         </div>
     </div>
 </section>
 
-<footer class="sitefooter">
-    <section class="sitefooter__data">
+<footer class="footersite">
         <div class="container">
-            <div class="row">
+            <div class="footersite-data row">
                 <div class="col">
                     EXPLANATOR LOGO
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa consectetur assumenda.</p>
-                    <ul>
-                        <li>biuro@explanator.pl</li>
-                        <li>tel. (61) 85 50 112</li>
-                        <li>Kościelna 30 lok. 59</li>
+                    <ul class="list list--icon list--white">
+                        <li class="list-item"><a href="mailto:biuro@explanator.pl">biuro@explanator.pl</a></li>
+                        <li class="list-item">tel. (61) 85 50 112</li>
+                        <li class="list-item">Kościelna 30 lok. 59</li>
                     </ul>
                 </div>
                 <div class="col">
-                    <h2>Na skróty</h2>
-                    <ul>
-                        <li><a href="#">Strona główna</a></li>
-                        <li><a href="#">Szkolenia otwarte</a></li>
-                        <li><a href="#">Szkolenia zamknięte</a></li>
-                        <li><a href="#">Publikacje</a></li>
-                        <li><a href="#">O nas</a></li>
-                        <li><a href="#">Kontakt</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Regulamin</a></li>
-                        <li><a href="#">Polityka prywatności</a></li>
+                    <div class="header">
+                        <h3 class="header-title header-title--section  header-title--white"><span>Na skróty</span></h3>
+                    </div>
+                    <ul class="list-2-col">
+                        <li class="list-2-col-inner">
+                            <ul class="nav-bull">
+                                <li class="nav-bull-item"><a href="index.html">Strona główna</a></li>
+                                <li class="nav-bull-item"><a href="courses_listing.html">Szkolenia otwarte</a></li>
+                                <li class="nav-bull-item"><a href="#">Szkolenia zamknięte</a></li>
+                                <li class="nav-bull-item"><a href="#">Publikacje</a></li>
+                                <li class="nav-bull-item"><a href="about_us.html">O nas</a></li>
+                                <li class="nav-bull-item"><a href="contact.html">Kontakt</a></li>
+                            </ul>
+                        </li>
+                        <li class="list-2-col-inner">
+                            <ul class="nav-bull">
+                                <li class="nav-bull-item"><a href="#">Regulamin</a></li>
+                                <li class="nav-bull-item"><a href="#">Polityka prywatności</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <div class="col">
-                    <h2>Newsletter</h2>
+                    <div class="header">
+                        <h3 class="header-title header-title--section header-title--white"><span>Newsletter</span></h3>
+                    </div>
                     <p>Niezawodna informacja na temat wydarzeń branżowych, nowych publikacji i aktualizacji serwisu.</p>
-                    <form>
-                        <input type="text" placeholder="Twój adres e-mail">
-                        <button type="submit" class="btn btn-submit">Wyślij</button>
+                    <form class="form-inline form-newsletter form-newsletter--bottom">
+                        <div class="form-group form-group-submit">
+                            <input type="email" class="form-control" placeholder="Twój adres e-mail">
+                            <button type="submit" class="btn btn-submit">Wyślij</button>
+                        </div>
                     </form>
                 </div>
             </div>
+            <div class="footersite-copyright row">
+                <div class="col">
+                    <p>Copyright &copy; 2009-2019 All Rights Reserved. Wszystkie prawa zastrzeżone.</p>
+                    <p>Explanator - szkolenia obejmujące zagadnienia prawne, finansowo-podatkowe i problemy zarządzania przedsiębiorstwami i instytucjami publicznymi.</p>
+                    <p>Ta strona jest chroniona przez reCAPTCHA i obowiązują na niej <a href="#">polityka prywatności</a> oraz <a href="#">warunki korzystania</a> z usługi firmy Google.</p>
+                </div>
+            </div>
         </div>
-    </section>
-    <section class="sitefooter__copyright">
-        <p>Copyright &copy; 2009-2019 All Rights Reserved. Wszystkie prawa zastrzeżone.</p>
-        <p>Explanator - szkolenia obejmujące zagadnienia prawne, finansowo-podatkowe i problemy zarządzania przedsiębiorstwami i instytucjami publicznymi.</p>
-        <p>Ta strona jest chroniona przez reCAPTCHA i obowiązują na niej polityka prywatności oraz warunki korzystania z usługi firmy Google.</p>
-    </section>
 </footer>
 
 

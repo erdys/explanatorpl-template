@@ -1,0 +1,90 @@
+.form-control {
+    color: #000;
+    border: 1px solid #ebebeb;
+    font-size: 12px;
+    @include rounded(0px);
+    @include boxShadow(none);
+    &:focus {
+        background: #ebebeb;
+        border: 1px solid #ebebeb;
+        @include boxShadow(none);
+    }
+    @include placeholder(#aaaaaa);
+}
+
+.form-newsletter {
+    .form-control {
+        height: 40px;
+        font-size: 1rem;
+    }
+    .form-group-submit {
+        position: relative;
+        width: 100%;
+        @include clearfix;
+        input, button {
+            float: left;
+        }
+        input {
+            padding-right: 80px;
+            width: 100%;
+        }
+        button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80px;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .btn-submit {
+        height: 40px;
+        font: 1rem/100% $font-title-sec;
+        background: #FFF;
+        color: #232323;
+        @include rounded(0);
+    }
+    &--main {
+        .form-control {
+            color: #ffffff;
+            border-color: #4dbdbf;
+            background: #17a9ad;
+            @include placeholder(#d1eeef);
+            &:focus {
+                color: #ffffff;
+                background: darken(#17a9ad, 5%);
+            } 
+        }
+        .btn-submit {
+            color: #232323;
+            border-color: #ffffff;
+            background: #ffffff;
+            &:hover, &:focus {
+                color: lighten(#232323, 10%);
+                background: darken(#ffffff, 10%);
+            }
+        }
+    }
+    &--bottom {
+        .form-control {
+            color: #ffffff;
+            border-color: #848484;
+            background: #626262;
+            @include placeholder(#cfcfcf);
+            &:focus {
+                color: #ffffff;
+                background: lighten(#47464a, 10%);
+            } 
+        }
+        .btn-submit {
+            color: #232323;
+            border-color: #ffffff;
+            background: #ffffff;
+            &:hover, &:focus {
+                color: lighten(#232323, 10%);
+                background: darken(#ffffff, 10%);
+            }
+        }
+    }
+}

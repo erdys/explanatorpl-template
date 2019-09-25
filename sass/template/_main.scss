@@ -1,5 +1,266 @@
-.test {backgorund: #cc0; }
-.dupa {font-weight: italic;}
 body {
-	background: #0cc0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font: normal $content-font-size $font-std;
+    line-height: 180%;
+    color: $content-color-text;
+    background: $body-bg;
+    a {
+        color: $content-color-link;
+        text-decoration: none;
+        @include transition(all .2s);
+        &:hover, &:focus {
+            color: $content-color-link-hover;
+            text-decoration: none;
+        }
+    }
+}
+
+.pull {
+    &-right {
+        float: right;
+    } 
+    &-left {
+        float: left;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+
+.btn {
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    @include transition(all .2s);
+    &-border {
+        margin: 0;
+        padding: 15px 25px;
+        font: bold 1rem/100% $font-title-sec;
+        border: 1px solid #dddddd;
+        background: #ffffff;
+        color: #000000;
+        &:hover, &:focus {
+            color: lighten(#000000, 10%);
+            background: darken(#ffffff, 10%);
+        }
+    }
+    &-primary {
+        margin: 0;
+        padding: 15px 25px;
+        font: bold 1rem/100% $font-title-sec;
+        border: 1px solid #b11623;
+        background: #b11623;
+        color: #ffffff;
+        &:hover, &:focus {
+            color: darken(#ffffff, 10%);
+            background: darken(#b11623, 10%);
+        }
+        &--white {
+            border: 1px solid #ffffff;
+            background: #ffffff;
+            color: #000000;
+            &:hover, &:focus {
+                color: lighten(#000000, 15%);
+                background: darken(#ffffff, 15%);
+            }
+        }
+    }
+}
+
+.link {
+    &-stretched::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        pointer-events: auto;
+        content: "";
+        background-color: rgba(0,0,0,0);
+    }
+}
+
+.headersite {
+    &-top {
+        background: #202020;
+
+    }
+    &-bottom {
+        background: #ffffff; 
+    }
+}
+
+.promotional {
+    background: #292c37;
+    display: block;
+    &-slider {
+
+    }
+    &-text {
+        padding: 20px 0 30px 0;
+        p {
+            color: #ffffff;
+        }
+    }
+}
+
+.insetbox {
+    padding: 26px 0 40px 0;
+    background: #059a99;
+    display: block;
+    p {
+        color: #cdebeb;
+    }
+}
+
+.theytrusted {
+    background: #ffffff;
+    @include clearfix;
+}
+
+
+.itembox {
+    margin: 0 0 30px 0;
+    width: 100%;
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    @include display-flex;
+    &-image-hld {
+        padding: 0;
+        width: 100%;
+        height:  100%;
+        position: relative;
+        overflow: hidden;
+        @include display-flex;
+        .label {
+            padding: 5px 10px;
+            font-size: 0.7857rem;
+            position: absolute;
+            top: 20px;
+            right: 0;
+            z-index: 100;
+        }
+        img {
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            @include transition(all .2s);
+            &:hover, &:focus {
+                @include scale3d(1.05, 1.05, 1);
+            }
+        }
+    }
+    &-data {
+        padding: 20px;
+        @include display-flex;
+        @include flex-direction(column);
+    }
+    &-body {
+        margin-top: auto;
+        align-items: stretch;
+        @include display-flex;
+        @include flex-direction(row);
+    }
+    &-header {
+        &-title {
+            color: #000000;
+            font: normal 2rem/100% $font-title;
+            min-height: 40px;
+
+        }
+        &-subtitle {
+            color: #035959;
+            font: italic 1.357rem/120% $font-title-sec;
+        }
+    }
+    &-content {
+        padding: 0  20px 0 0;
+        p {
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+    &-action {
+        padding: 0;
+        position: relative;
+        @include display-flex;
+        @include flex-direction(column);
+        &::after {
+            content: "";
+            width: 1px;
+            height: auto;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 60px;
+            z-index: 100;
+            background: #e6e6e8;
+        }
+        p {
+            text-align: right;
+            padding-left: 15px;
+            small {
+                font-size: 0.7857rem;
+            }
+        }
+        b {
+            text-align: left;
+            margin-bottom: 10px;
+            color: #656565;
+            font-size: 0.8571rem;
+            display: block;
+        }
+        .btn {
+            margin-top: auto;
+            width: 100%;
+            text-align: center;
+        }
+        &-item {
+            display: block;
+            color: #000000;
+            &:hover, &:focus {
+                color: lighten(#000000, 70%);
+                text-decoration: none;
+            } 
+        }
+
+    }
+}
+
+.footersite {
+    padding: 25px 0 15px 0;
+    background: #202020; 
+    &-data {
+        p {
+            color: #ffffff;
+        }
+
+    }
+    &-copyright {
+        padding: 10px 0;
+        border-top: 1px solid #797979;
+        p {
+            margin: 5px 0 0 0;
+            padding: 0;
+            font-size:  0.7857rem;
+            line-height: 120%;
+            color: #909090;
+        }
+        a {
+            color: lighten(#909090, 10%);
+            text-decoration: underline;
+            &:hover, &:focus {
+                color: darken(#909090, 10%);
+                text-decoration: none;
+            }
+        }
+    }
 }

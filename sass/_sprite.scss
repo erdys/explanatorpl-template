@@ -1,0 +1,104 @@
+%svg-common {
+	background: url("images/sprite-svg.svg") no-repeat;
+}
+
+.svg-icon-arrow {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-icon-arrow-dims {
+	width: 70px;
+	height: 70px;
+}
+
+.svg-icon-calendar {
+	@extend %svg-common;
+	background-position: 38.04347826086956% 0;
+}
+
+.svg-icon-calendar-dims {
+	width: 70px;
+	height: 70px;
+}
+
+.svg-icon-cart {
+	@extend %svg-common;
+	background-position: 0 50%;
+}
+
+.svg-icon-cart-dims {
+	width: 70px;
+	height: 70px;
+}
+
+.svg-icon-email {
+	@extend %svg-common;
+	background-position: 75.26881720430107% 98.59154929577464%;
+}
+
+.svg-icon-email-dims {
+	width: 68px;
+	height: 68px;
+}
+
+.svg-icon-gmap {
+	@extend %svg-common;
+	background-position: 38.04347826086956% 50%;
+}
+
+.svg-icon-gmap-dims {
+	width: 70px;
+	height: 70px;
+}
+
+.svg-icon-help {
+	@extend %svg-common;
+	background-position: 76.08695652173913% 0;
+}
+
+.svg-icon-help-dims {
+	width: 70px;
+	height: 70px;
+}
+
+.svg-icon-pdf {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.svg-icon-pdf-dims {
+	width: 44px;
+	height: 44px;
+}
+
+.svg-icon-phone {
+	@extend %svg-common;
+	background-position: 76.08695652173913% 50%;
+}
+
+.svg-icon-phone-dims {
+	width: 70px;
+	height: 70px;
+}
+
+.svg-icon-search {
+	@extend %svg-common;
+	background-position: 0 100%;
+}
+
+.svg-icon-search-dims {
+	width: 70px;
+	height: 70px;
+}
+
+.svg-icon_location {
+	@extend %svg-common;
+	background-position: 38.04347826086956% 100%;
+}
+
+.svg-icon_location-dims {
+	width: 70px;
+	height: 70px;
+}
+

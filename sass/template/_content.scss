@@ -1,0 +1,122 @@
+.header {
+    &-title{
+        margin: 0;
+        padding: 0;
+        &--simple {
+            margin: 14px 0;
+            color: #ffffff;
+            font: bold 1.857rem/100% $font-head;
+        }
+        &--name {
+            margin: 50px 0 50px 0;
+            color: #000000;
+            font: bold 1.429rem/100% $font-head;
+            span {
+                position: relative;
+                &::after {
+                    content: "";
+                    width: 40px;
+                    height: 5px;
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    z-index: 100;
+                    background: #059b99;
+                }
+            }
+        }
+        &--section {
+            margin: 5px 0 40px 0;
+            color: #000000;
+            font: bold 1.429rem/100% $font-head;
+            span {
+                position: relative;
+                &:after {
+                    content: "";
+                    width: 40px;
+                    height: 5px;
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    z-index: 100;
+                    background: #059b99;
+                }
+            }
+        }
+        &--promotional {
+            margin: 20px 0 50px 0;
+            color: #ffffff;
+            font: normal 2.571rem/100% $font-title-extra;
+            span {
+                position: relative;
+                &::after {
+                    content: "";
+                    width: 50px;
+                    height: 10px;
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    bottom: -15px;
+                    z-index: 100;
+                    background: #059b99;
+                }
+            }
+            a {
+                color: #ffffff;
+                &:hover, &:focus {
+                    color: #ffffff;
+                }
+            }
+        }
+        &--white {
+            color: #ffffff;
+        }
+    }
+
+}
+
+.label {
+    &-itembox {
+        background: #fedb65;
+        color: #000000; 
+    }
+}
+
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #000000;
+    &--icon {
+        .list-item {
+            @extend .list;
+            padding: 8px 0;
+        }
+
+    }
+    &--white {
+        .list-item {
+            color: #ffffff;
+            a {
+                color: #ffffff;
+                &:hover, &:focus {
+                    color: lighten(#000000, 70%);
+                    text-decoration: none;
+                } 
+            }
+        }
+    }
+}
+
+.list-2-col {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    &-inner {
+        width: 50%;
+        float: left;
+    }
+}
