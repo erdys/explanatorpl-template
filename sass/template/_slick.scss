@@ -1,0 +1,28 @@
+
+.js-slick-items {
+    margin: 0;
+    padding: 0;
+    li {
+        margin: 0 10px;
+        padding: 0;
+        list-style: none;
+        display: inline-block;
+        &:hover, &:focus {
+            outline: none;
+        }
+    }
+}
+
+
+.slick-slider {
+    display: none !important;
+    &.slick-initialized {
+        display: block !important;
+    }
+}
+
+.slick-slide {
+    img {
+        margin: 0 auto;
+    }
+}

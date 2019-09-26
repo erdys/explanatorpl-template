@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="vendor/icheck/skins/square/red.css" />
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/modernizr-custom.js"></script>
 </head>
 
@@ -23,11 +23,11 @@
         <div class="container">
             <div class="row">
                 <ul class="nav-help">
-                    <li class="nav-help-item"><a href="mailto:biuro@explanator.pl">biuro@explanator.pl</a></li>
-                    <li class="nav-help-item">tel. (61) 85 50 112</li>
-                    <li class="nav-help-item"><a href="#">Pomoc</a></li>
-                    <li class="nav-help-item"><a href="#">Koszyk (0)</a></li>
-                    <li class="nav-help-item"><a href="#">Szukaj</a></li>
+                    <li class="nav-help-item"><i class="icon icon--email"></i><a href="mailto:biuro@explanator.pl">biuro@explanator.pl</a></li>
+                    <li class="nav-help-item"><i class="icon icon--phone"></i>tel. (61) 85 50 112</li>
+                    <li class="nav-help-item"><i class="icon icon--help"></i><a href="#">Pomoc</a></li>
+                    <li class="nav-help-item"><i class="icon icon--cart"></i><a href="#">Koszyk (0)</a></li>
+                    <li class="nav-help-item"><i class="icon icon--search"></i><a href="#">Szukaj</a></li>
                 </ul>
             </div>
         </div>
@@ -36,7 +36,7 @@
         <div class="container">
             <div class="row">
                 <div class="logo">
-                    EXPLANATOR
+                    <a href="index.html"><img src="images/explanator-red.svg" class="img-fluid" alt=""></a>
                 </div>
                 <menu class="navbar">
                     <ul class="navbar-inner">
@@ -56,10 +56,37 @@
     <div class="container">
         <div class="row">
             <div class="promotional-slider col-8">
-                <h2>Storytelling jako skuteczne narzędzie sprzedażowe</h2>
-                <p>Poznań, 27.09.2019</p>
-                <p>Pracujesz w sprzedaży? Jeśli tak, to z pewnością chcesz bić sprzedażowe rekordy, a także przewidywać, a nawet wyprzedzać oczekiwania klientów obecnych i przyszłych.</p>
+                <ul class="js-slick-items slick-slider promotional-slider-inner">
+                    <li class="item">
+                        <a href="#">
+                            <div class="item-data">
+                                <div class="item-image">
+                                    <img src="http://via.placeholder.com/300x300/ffcffc/000000?text=1" />
+                                </div>
+                                <h2 class="item-title">Storytelling jako skuteczne narzędzie sprzedażowe</h2>
+                                <p class="item-time">Poznań, 27.09.2019</p>
+                                <p class="item-text">Pracujesz w sprzedaży? Jeśli tak, to z pewnością chcesz bić sprzedażowe rekordy, a także przewidywać, a nawet wyprzedzać oczekiwania klientów obecnych i przyszłych.</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="slick-slider-dots promotional-slider-dots"></div>
             </div>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.js-slick-items.promotional-slider-inner').slick({
+                        slide: 'li',
+                        arrows: false,
+                        infinite: true,
+                        speed: 300,
+                        slidesToShow: 1,
+                        autoplay: true,
+                        autoplaySpeed: 4000,
+                        dots: true,
+                        appendDots: $('.promotional-slider-dots')
+                    });
+                });
+            </script>
             <div class="promotional-text col">
                 <div class="header">
                     <h3 class="header-title header-title--promotional"><span><a href="#">Szkolenia zamknięte</a></span></h3>
@@ -93,6 +120,7 @@
                         </div>
                         <div class="col-lg-5 itembox-action">
                             <p><b>Miejsce i termin:</b>
+                                <i class="icon icon--calendar"></i>
                                 <a href="#" class="itembox-action-item">Cała Polska <small>(szkolenie on-line)</small> 30.08.2019-20.09.2019</a>
                             </p>
                             <a href="courses_details.html" class="btn btn-border">Szczegóły</a>
@@ -117,6 +145,7 @@
                         </div>
                         <div class="col-lg-5 itembox-action">
                             <p><b>Miejsce i termin:</b>
+                                <i class="icon icon--calendar"></i>
                                 <a href="#" class="itembox-action-item">Poznań, 22.08.2019</a>
                                 <a href="#" class="itembox-action-item">Warszawa, 22-29.08.2019</a>
                                 <a href="#" class="itembox-action-item">Gdańsk, 4.09.2019</a>
@@ -150,7 +179,55 @@
             </div>
         </div>
     </div>
-</section>
+</main>
+<!-- 
+<main class="boxlist-2-col">
+    <div class="container">
+        <div class="header center">
+            <h3 class="header-title header-title--name"><span>Zobacz również</span></h3>
+        </div>
+        <div class="row">
+            <div class="col itembox">
+                <div class="col-lg-4 itembox-image-hld">
+                    <span class="label label-itembox">forum</span>
+                    <img src="https://via.placeholder.com/350x288/ddd/000.png" />
+                </div>
+                <div class="col-lg-8 itembox-data">
+                    <div class="itembox-header">
+                        <h3 class="itembox-header-title">5. Forum Nowoczesnego Controllingu</h3>
+                        <h3 class="itembox-header-subtitle">Skuteczny controlling - rentowne przedsiębiorstwo. Koszty - oszczędności - optymalizacje</h3>
+                    </div>
+                    <div class="itembox-body">
+                        <div class="col-lg-5 itembox-action">
+                            <p>Wykładowcy: Zespół ekspertów</p>
+                            <a href="courses_details.html" class="btn btn-border">Warszawa, 24-25.10.2019</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col itembox">
+                <div class="col-lg-4 itembox-image-hld">
+                    <span class="label label-itembox">e-kurs mailowy</span>
+                    <img src="https://via.placeholder.com/350x288/ddd/000.png" />
+                </div>
+                <div class="col-lg-8 itembox-data">
+                    <div class="itembox-header">
+                        <h3 class="itembox-header-title">Umowa zlecenia - przegląd ryzyk formalno-prawnych</h3>
+                        <h3 class="itembox-header-subtitle">Zagadnienia praktyczne, przegląd orzecznictwa, odpowiedzi na najważniejsze pytania</h3>
+                    </div>
+                    <div class="itembox-body">
+                        <div class="col-lg-5 itembox-action">
+                            <p>Wykładowcy: Zespół ekspertów</p>
+                            <a href="courses_details.html" class="btn btn-border">Szczegóły</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main> -->
 
 <section class="theytrusted">
     <div class="container">
@@ -158,9 +235,29 @@
             <h3 class="header-title header-title--name"><span>Zaufali nam</span></h3>
         </div>
         <div class="row">
-            <div class="col">
-                <p>logotypy scroll</p>
+            <div class="col-12">
+                <ul class="js-slick-items slick-slider theytrusted-inner">
+                    <li class="item"><img src="http://via.placeholder.com/250x65/ffcffc/000000?text=1" /></li>
+                    <li class="item"><img src="http://via.placeholder.com/250x65/ffcccc/000000?text=2" /></li>
+                    <li class="item"><img src="http://via.placeholder.com/250x65/cccffc/000000?text=3" /></li>
+                    <li class="item"><img src="http://via.placeholder.com/250x65/ffccfc/000000?text=4" /></li>
+                    <li class="item"><img src="http://via.placeholder.com/250x65/ffcccc/000000?text=5" /></li>
+                    <li class="item"><img src="http://via.placeholder.com/250x65/cffffc/000000?text=6" /></li>
+                </ul>
             </div>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.js-slick-items.theytrusted-inner').slick({
+                        slide: 'li',
+                        arrows: false,
+                        dots: false,
+                        infinite: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                    });
+                });
+            </script>
         </div>
     </div>
 </section>
@@ -183,7 +280,9 @@
         <div class="container">
             <div class="footersite-data row">
                 <div class="col">
-                    EXPLANATOR LOGO
+                    <div class="logo">
+                        <a href="index.html"><img src="images/explanator-turquoise.svg" class="img-fluid" alt=""></a>
+                    </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa consectetur assumenda.</p>
                     <ul class="list list--icon list--white">
                         <li class="list-item"><a href="mailto:biuro@explanator.pl">biuro@explanator.pl</a></li>
@@ -237,12 +336,6 @@
         </div>
 </footer>
 
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/imgLiquid.min.js"></script>
-<script type="text/javascript" src="js/jquery.matchHeight-min.js"></script>
-<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
-<script type="text/javascript" src="js/home.js"></script>
 <script type="text/javascript" src="js/site.js"></script>
 <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
 <script type="text/javascript" src="vendor/icheck/icheck.min.js"></script>

@@ -1,7 +1,12 @@
 @import "bootstrap-overrides";
+@import "template/sass-inline-svg";
+@import "template/sprite-png";
 @import "template/vars";
 @import "template/mixin";
 @import "template/fonts";
+
+@import "template/slick";
+
 @import "template/main";
 @import "template/nav";
 @import "template/content";

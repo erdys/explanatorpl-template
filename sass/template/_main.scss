@@ -18,6 +18,14 @@ body {
     }
 }
 
+i {
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .pull {
     &-right {
         float: right;
@@ -72,6 +80,53 @@ body {
     }
 }
 
+.icon {
+    margin-right: 10px;
+    &--arrow {
+
+    }
+    &--calendar {
+        width: 43px;
+        height: 41px;
+        @include inline-svg-icon("icon-calendar", #ffffff, center, 43px 41px);
+    }
+    &--cart {
+        width: 25px;
+        height: 24px;
+        @include inline-svg-icon("icon-cart", #ffffff, center, 25px 24px);
+    }
+    &--email {
+        margin-bottom: 2px;
+        width: 30px;
+        height: 20px;
+        @include inline-svg-icon("icon-email", #ffffff, center, 30px 20px);
+    }
+    &--gmap {
+
+    }
+    &--help {
+        width: 26px;
+        height: 26px;
+        @include inline-svg-icon("icon-help", #ffffff, center, 26px 26px);
+    }
+    &--location {
+
+    }
+    &--pdf {
+
+    }
+    &--phone {
+        width: 25px;
+        height: 25px;
+        @include inline-svg-icon("icon-phone", #ffffff, center, 25px 25px);
+    }
+    &--search {
+        width: 22px;
+        height: 22px;
+        @include inline-svg-icon("icon-search", #ffffff, center, 22px 22px);
+    }
+}
+
 .link {
     &-stretched::after {
         position: absolute;
@@ -94,12 +149,50 @@ body {
     &-bottom {
         background: #ffffff; 
     }
+    .logo {
+        margin: 14px 0 auto 0;
+        padding: 0 30px 0 0;
+        @extend .col-3;
+        a {
+            display: block;
+        }
+    }
+    .nav-help {
+        margin-left: auto;
+    }
 }
 
 .promotional {
     background: #292c37;
     display: block;
     &-slider {
+        &-inner {
+            height: 100%; 
+            .slick-list, .slick-track {
+                height: 100%;
+            }
+            li {
+                @include display-flex;
+                margin: 0;
+            }
+            .item {
+                &-data {
+
+                }
+                &-image {
+
+                }
+                &-title {
+
+                }
+                &-time {
+
+                }
+                &-text {
+                    
+                }
+            }
+        }
 
     }
     &-text {
@@ -122,6 +215,9 @@ body {
 .theytrusted {
     background: #ffffff;
     @include clearfix;
+    &-inner {
+        margin-bottom: 30px;
+    } 
 }
 
 
@@ -134,7 +230,7 @@ body {
     &-image-hld {
         padding: 0;
         width: 100%;
-        height:  100%;
+        height: 100%;
         position: relative;
         overflow: hidden;
         @include display-flex;
@@ -204,6 +300,10 @@ body {
             z-index: 100;
             background: #e6e6e8;
         }
+        .icon--calendar {
+            margin-left: 5px;
+            float: left;
+        }
         p {
             text-align: right;
             padding-left: 15px;
@@ -239,6 +339,13 @@ body {
     padding: 25px 0 15px 0;
     background: #202020; 
     &-data {
+        .logo {
+            margin-bottom: 14px;
+            width: 240px;
+            a {
+                display: block;
+            }
+        }
         p {
             color: #ffffff;
         }
@@ -264,3 +371,4 @@ body {
         }
     }
 }
+

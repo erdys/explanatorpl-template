@@ -6,8 +6,27 @@ const imagemin = require('gulp-imagemin');
 const spritesmith = require('gulp.spritesmith');
 const merge = require('merge-stream');
 const buffer = require('vinyl-buffer');
-const svgSprite = require('gulp-svg-sprite');
-const imageminSvgo = require('imagemin-svgo');
+const sassInlineSvg = require('gulp-sass-inline-svg');
+const svgmin = require('gulp-svgmin');
+
+var configSVG = {
+    plugins: [{
+        removeDoctype: false
+    }, {
+        removeDimensions: true
+    }, {
+        removeComments: false
+    }, {
+        cleanupNumericValues: {
+            floatPrecision: 2
+        }
+    }, {
+        convertColors: {
+            names2hex: false,
+            rgb2hex: false
+        }
+    }]
+};
 
 gulp.task('sass', function () {
     return gulp.src('./sass/main.scss')
@@ -23,16 +42,16 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./css'))
 });
 
-gulp.task('spritepng', function () {
-    var spriteData = gulp.src('./images/_sprites-png/*.png').pipe(spritesmith({
-        imgName: 'sprite-png.png',
-        cssName: '_sprite-png.scss',
+gulp.task('sprite:png', function () {
+    var spriteData = gulp.src('./images/_sprites/*.png').pipe(spritesmith({
+        imgName: 'sprite.png',
+        cssName: '_sprite.scss',
         padding: 20,
         cssOpts: {
             functions: false
         },
         cssVarMap: function (sprite) {
-            sprite.name = 'spritepng-' + sprite.name;
+            sprite.name = 'sprite-' + sprite.name;
         }
     }));
 
@@ -47,53 +66,25 @@ gulp.task('spritepng', function () {
     return merge(imgStream, cssStream);
 
 });
-
-gulp.task('spritesvg', function () {
-    return gulp.src('./images/_sprites-svg/*.svg').pipe(svgSprite({
-        shape: {
-            dimension: {
-                maxWidth: 50,
-                maxHeight: 50
-            },
-            spacing: {
-                padding: 10
-            }
-        },
-        mode: {
-            css : {
-                bust: false,
-                dest : '.',
-                sprite : './images/sprite-svg.svg',
-                render : {
-                    scss : {
-                        dest : './sass/_sprite.scss'
-                    }
-                },
-            }
-        }
-    }))
-    .pipe(gulp.dest('.'));
-});
-
 gulp.task('imagemin', function () {
     return gulp.src('./images/_source/*.+(png|jpg)')
         .pipe(imagemin())
         .pipe(gulp.dest('./images'))
 });
 
-gulp.task('imageminsvg', function () {
+gulp.task('imagemin:svg', function () {
     return gulp.src('./images/_source/*.+(svg)')
-        .pipe(imagemin({
-            use: [
-                imageminSvgo({
-                    plugins: [
-                        {removeViewBox: false}
-                    ]
-                })
-            ]
-        }))
-        .pip
+        .pipe(svgmin(configSVG))
         .pipe(gulp.dest('./images'))
+
+});
+
+gulp.task('sass:svg', function(){
+    return gulp.src('./images/_icons-svg/*.+(svg)') 
+      .pipe(svgmin(configSVG))
+      .pipe(sassInlineSvg({
+        destDir: './sass/template/'
+      }));
 });
 
 gulp.task('watch', () => {
