@@ -16,6 +16,7 @@
             padding: 40px 20px;
             display: block;
             color: #000000;
+            text-decoration: none;
             &:hover, &:focus {
                 color: lighten(#000000, 70%);
                 text-decoration: none;
@@ -23,6 +24,7 @@
         }
     }
 }
+
 
 .nav-help {
     margin: 0;
@@ -36,6 +38,7 @@
         display: inline-block;
         a {
             color: #ffffff;
+            text-decoration: none;
             &:hover, &:focus {
                 color: lighten(#000000, 70%);
                 text-decoration: none;
@@ -53,10 +56,19 @@
         margin: 4px 0;
         a {
             color: #ffffff;
+            text-decoration: none;
             &:hover, &:focus {
                 color: lighten(#000000, 70%);
                 text-decoration: none;
             } 
+        }
+        &::before {
+            content: "";
+            margin-right: 10px;
+            width: 5px;
+            height: 9px;
+            display: inline-block;
+            @include inline-svg-icon("icon-arrow", #059b99, center, 5px 9px);
         }
     }
 }

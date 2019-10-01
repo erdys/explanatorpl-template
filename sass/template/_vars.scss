@@ -6,11 +6,10 @@ $font-title: 'OpenSansCondensed', Arial, sans-serif;
 $font-title-sec: 'OpenSansSemiBold', Arial, sans-serif;
 $font-title-extra: 'OpenSansExtraBold', Arial, sans-serif;
 
-$nav-top-color: #FFF;
-$nav-bottom-color: #FFF;
+$main-color: #059b99;
 
 $content-font-size: 14px;
 
 $content-color-text: #000000;
-$content-color-link: #cc0;
-$content-color-link-hover: #cc0c;
+$content-color-link: #057a79;
+$content-color-link-hover: darken(#057a79, 10%);

@@ -9,7 +9,7 @@ body {
     background: $body-bg;
     a {
         color: $content-color-link;
-        text-decoration: none;
+        text-decoration: underline;
         @include transition(all .2s);
         &:hover, &:focus {
             color: $content-color-link-hover;
@@ -44,6 +44,7 @@ i {
     border: none;
     cursor: pointer;
     display: inline-block;
+    text-decoration: none;
     @include transition(all .2s);
     &-border {
         margin: 0;
@@ -51,9 +52,9 @@ i {
         font: bold 1rem/100% $font-title-sec;
         border: 1px solid #dddddd;
         background: #ffffff;
-        color: #000000;
+        color: #292c37;
         &:hover, &:focus {
-            color: lighten(#000000, 10%);
+            color: lighten(#292c37, 10%);
             background: darken(#ffffff, 10%);
         }
     }
@@ -71,9 +72,9 @@ i {
         &--white {
             border: 1px solid #ffffff;
             background: #ffffff;
-            color: #000000;
+            color: #292c37;
             &:hover, &:focus {
-                color: lighten(#000000, 15%);
+                color: lighten(#292c37, 15%);
                 background: darken(#ffffff, 15%);
             }
         }
@@ -110,20 +111,49 @@ i {
         @include inline-svg-icon("icon-help", #ffffff, center, 26px 26px);
     }
     &--location {
-
+        width: 26px;
+        height: 26px;
+        @include inline-svg-icon("icon-location", #ffffff, center, 26px 26px);
     }
-    &--pdf {
-
+    &--file {
+        width: 18px;
+        height: 23px;
+        @include inline-svg-icon("icon-pdf", #ffffff, center, 18px 23px);
     }
     &--phone {
-        width: 25px;
+        width: 21px;
         height: 25px;
-        @include inline-svg-icon("icon-phone", #ffffff, center, 25px 25px);
+        @include inline-svg-icon("icon-phone", #ffffff, center, 21px 25px);
     }
     &--search {
         width: 22px;
         height: 22px;
         @include inline-svg-icon("icon-search", #ffffff, center, 22px 22px);
+    }
+    &--envelope {
+        width: 22px;
+        height: 22px;
+        @include inline-svg-icon("icon-envelope", #383e42, center, 22px 22px);
+    }
+    &--linkedin {
+        width: 22px;
+        height: 22px;
+        @include inline-svg-icon("icon-linkedin", #383e42, center, 22px 22px);
+    }
+    &--facebook {
+        width: 22px;
+        height: 22px;
+        @include inline-svg-icon("icon-facebook", #383e42, center, 22px 22px);
+    }
+    &--twitter {
+        width: 22px;
+        height: 22px;
+        @include inline-svg-icon("icon-twitter", #383e42, center, 22px 22px);
+    }
+    &--print {
+        width: 22px;
+        height: 22px;
+        @include inline-svg-icon("icon-print", #383e42, center, 22px 22px);
     }
 }
 
@@ -151,8 +181,8 @@ i {
     }
     .logo {
         margin: 14px 0 auto 0;
-        padding: 0 30px 0 0;
-        @extend .col-3;
+        // padding: 0 30px 0 0;
+        // @extend .col-3;
         a {
             display: block;
         }
@@ -167,6 +197,7 @@ i {
     display: block;
     &-slider {
         &-inner {
+            // margin-left: -20vw;
             height: 100%; 
             .slick-list, .slick-track {
                 height: 100%;
@@ -176,11 +207,17 @@ i {
                 margin: 0;
             }
             .item {
+                position: relative;
                 &-data {
-
+                    height: 100%;
+                    position: absolute;
+                    z-index: 110;
                 }
                 &-image {
-
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 100;
                 }
                 &-title {
 
@@ -196,7 +233,8 @@ i {
 
     }
     &-text {
-        padding: 20px 0 30px 0;
+        padding-top: 20px;
+        padding-bottom: 30px;
         p {
             color: #ffffff;
         }
@@ -209,6 +247,14 @@ i {
     display: block;
     p {
         color: #cdebeb;
+    }
+    &--admission {
+        margin-bottom: 60px;
+        padding: 40px 0;
+        background: #292c37;
+        p {
+            color: #ffffff;
+        }
     }
 }
 
@@ -224,8 +270,6 @@ i {
 .itembox {
     margin: 0 0 30px 0;
     width: 100%;
-    border: 1px solid #dddddd;
-    background: #ffffff;
     @include display-flex;
     &-image-hld {
         padding: 0;
@@ -254,6 +298,9 @@ i {
     }
     &-data {
         padding: 20px;
+        border: 1px solid #dddddd;
+        border-left: none;
+        background: #ffffff;
         @include display-flex;
         @include flex-direction(column);
     }
@@ -285,28 +332,16 @@ i {
     }
     &-action {
         padding: 0;
+        width: 100%;
         position: relative;
         @include display-flex;
         @include flex-direction(column);
-        &::after {
-            content: "";
-            width: 1px;
-            height: auto;
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 60px;
-            z-index: 100;
-            background: #e6e6e8;
-        }
         .icon--calendar {
             margin-left: 5px;
             float: left;
         }
         p {
-            text-align: right;
-            padding-left: 15px;
+            text-align: left;
             small {
                 font-size: 0.7857rem;
             }
@@ -326,12 +361,72 @@ i {
         &-item {
             display: block;
             color: #000000;
+            text-decoration: none;
             &:hover, &:focus {
                 color: lighten(#000000, 70%);
                 text-decoration: none;
             } 
         }
+        &--line {
+            &::after {
+                content: "";
+                width: 1px;
+                height: auto;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 60px;
+                z-index: 100;
+                background: #e6e6e8;
+            }
+            p {
+                padding-left: 15px;
+                text-align: right;
+            }
+        }
 
+    }
+}
+
+.listing {
+    &-action {
+        margin: 10px 0 60px 0;
+        text-align: right;
+        .pagination {
+            li {
+                background: #ffffff;
+                border: 1px solid #dddddd;
+                text-decoration: none;
+                display: inline-block;
+                a,
+                span {
+                    margin: 0 0 0 4px;
+                    padding: 4px 8px;
+                    color: #282828;
+                    font: normal 1rem/100% $font-title-sec;
+                    border: 1px solid transparent;
+                    text-decoration: none;
+                }
+                &.prev {
+
+                }
+                &.active {
+                    background: $main-color;
+                    a {
+                        color: #ffffff;
+                    }
+
+                }
+                &.blank {
+
+                }
+                &.next {
+
+                }
+            }
+
+        }
     }
 }
 
@@ -345,6 +440,18 @@ i {
             a {
                 display: block;
             }
+        }
+        .list {
+            margin: 0 0 20px 0;
+            &--icon {
+                .list-item {
+                    padding: 6px 0;
+                }
+            }
+            .icon {
+                width: 30px;
+            }
+
         }
         p {
             color: #ffffff;

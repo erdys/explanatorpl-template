@@ -35,10 +35,10 @@
     <section class="headersite-bottom">
         <div class="container">
             <div class="row">
-                <div class="logo">
+                <div class="col logo">
                     <a href="index.html"><img src="images/explanator-red.svg" class="img-fluid" alt=""></a>
                 </div>
-                <menu class="navbar">
+                <menu class="col-lg-auto navbar">
                     <ul class="navbar-inner">
                         <li class="navbar-item"><a href="courses_listing.html">Szkolenia otwarte</a></li>
                         <li class="navbar-item"><a href="#">Szkolenia zamknięte</a></li>
@@ -58,11 +58,23 @@
             <div class="promotional-slider col-8">
                 <ul class="js-slick-items slick-slider promotional-slider-inner">
                     <li class="item">
+                        <div class="item-image">
+                            <img src="http://via.placeholder.com/300x300/ffcffc/000000?text=1" />
+                        </div>
                         <a href="#">
                             <div class="item-data">
-                                <div class="item-image">
-                                    <img src="http://via.placeholder.com/300x300/ffcffc/000000?text=1" />
-                                </div>
+                                <h2 class="item-title">Storytelling jako skuteczne narzędzie sprzedażowe</h2>
+                                <p class="item-time">Poznań, 27.09.2019</p>
+                                <p class="item-text">Pracujesz w sprzedaży? Jeśli tak, to z pewnością chcesz bić sprzedażowe rekordy, a także przewidywać, a nawet wyprzedzać oczekiwania klientów obecnych i przyszłych.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="http://via.placeholder.com/300x300/ffcffc/000000?text=1" />
+                        </div>
+                        <a href="#">
+                            <div class="item-data">
                                 <h2 class="item-title">Storytelling jako skuteczne narzędzie sprzedażowe</h2>
                                 <p class="item-time">Poznań, 27.09.2019</p>
                                 <p class="item-text">Pracujesz w sprzedaży? Jeśli tak, to z pewnością chcesz bić sprzedażowe rekordy, a także przewidywać, a nawet wyprzedzać oczekiwania klientów obecnych i przyszłych.</p>
@@ -87,7 +99,7 @@
                     });
                 });
             </script>
-            <div class="promotional-text col">
+            <div class="promotional-text col-4">
                 <div class="header">
                     <h3 class="header-title header-title--promotional"><span><a href="#">Szkolenia zamknięte</a></span></h3>
                 </div>
@@ -98,13 +110,13 @@
     </div>
 </secion>
 
-<main class="boxlist">
+<main>
     <div class="container">
         <div class="header center">
             <h3 class="header-title header-title--name"><span>Polecane szkolenia</span></h3>
         </div>
         <div class="row">
-            <div class="itembox">
+            <div class="col-lg-12 itembox">
                 <div class="col-lg-4 itembox-image-hld">
                     <span class="label label-itembox">forum</span>
                     <img src="https://via.placeholder.com/350x288/ddd/000.png" />
@@ -118,7 +130,7 @@
                         <div class="col-lg-7 itembox-content">
                             <p>Gdy pojawiają się pytania o rentowność i optymalizację, warto opierać decyzje na wartościowych źródłach wiedzy i przykładach dobrych praktyk. Bo jeśli optymalizować to tak, żeby być w stanie wypłynąć na spokojne wody nie tylko tu i teraz, ale również w dłuższej perspektywie. Dlatego też tegoroczne spotkanie controllerów, dyrektorów finansowych, księgowych oraz właścicieli firm skoncentruje się na temacie zwiększania skuteczności służb controllingowych.</p>
                         </div>
-                        <div class="col-lg-5 itembox-action">
+                        <div class="col-lg-5 itembox-action itembox-action--line">
                             <p><b>Miejsce i termin:</b>
                                 <i class="icon icon--calendar"></i>
                                 <a href="#" class="itembox-action-item">Cała Polska <small>(szkolenie on-line)</small> 30.08.2019-20.09.2019</a>
@@ -129,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            <div class="itembox">
+            <div class="col-lg-12 itembox">
                 <div class="col-lg-4 itembox-image-hld">
                     <span class="label label-itembox">e-kurs mailowy</span>
                     <img src="https://via.placeholder.com/350x288/ddd/000.png" />
@@ -143,7 +155,7 @@
                         <div class="col-lg-7 itembox-content">
                             <p>Zinteresowanie pracodawców umowami cywilno-prawnymi nie słabnie. Jednakże z każdą formą elastycznego zatrudnienia związane są liczne ryzyka. Możliwości popełnienia błędu skutkującego znaczącymi konsekwencjami prawnymi i finansowymi jest wyjątkowo duże. Dodatkowo pojawia się liczne orzecznictwo, które ma konkretny wpływ na praktykę zatrudniania pracowników.</p>
                         </div>
-                        <div class="col-lg-5 itembox-action">
+                        <div class="col-lg-5 itembox-action itembox-action--line">
                             <p><b>Miejsce i termin:</b>
                                 <i class="icon icon--calendar"></i>
                                 <a href="#" class="itembox-action-item">Poznań, 22.08.2019</a>
@@ -158,7 +170,7 @@
             </div>
         </div>
     </div>
-</section>
+</main>
 
 <section class="insetbox">
     <div class="container">
@@ -179,15 +191,15 @@
             </div>
         </div>
     </div>
-</main>
-<!-- 
-<main class="boxlist-2-col">
+</section>
+
+<main>
     <div class="container">
         <div class="header center">
             <h3 class="header-title header-title--name"><span>Zobacz również</span></h3>
         </div>
         <div class="row">
-            <div class="col itembox">
+            <div class="col-lg-6 itembox">
                 <div class="col-lg-4 itembox-image-hld">
                     <span class="label label-itembox">forum</span>
                     <img src="https://via.placeholder.com/350x288/ddd/000.png" />
@@ -198,7 +210,7 @@
                         <h3 class="itembox-header-subtitle">Skuteczny controlling - rentowne przedsiębiorstwo. Koszty - oszczędności - optymalizacje</h3>
                     </div>
                     <div class="itembox-body">
-                        <div class="col-lg-5 itembox-action">
+                        <div class="itembox-action">
                             <p>Wykładowcy: Zespół ekspertów</p>
                             <a href="courses_details.html" class="btn btn-border">Warszawa, 24-25.10.2019</a>
                         </div>
@@ -206,7 +218,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col itembox">
+            <div class="col-lg-6 itembox">
                 <div class="col-lg-4 itembox-image-hld">
                     <span class="label label-itembox">e-kurs mailowy</span>
                     <img src="https://via.placeholder.com/350x288/ddd/000.png" />
@@ -217,7 +229,45 @@
                         <h3 class="itembox-header-subtitle">Zagadnienia praktyczne, przegląd orzecznictwa, odpowiedzi na najważniejsze pytania</h3>
                     </div>
                     <div class="itembox-body">
-                        <div class="col-lg-5 itembox-action">
+                        <div class="itembox-action">
+                            <p>Wykładowcy: Zespół ekspertów</p>
+                            <a href="courses_details.html" class="btn btn-border">Szczegóły</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 itembox">
+                <div class="col-lg-4 itembox-image-hld">
+                    <span class="label label-itembox">forum</span>
+                    <img src="https://via.placeholder.com/350x288/ddd/000.png" />
+                </div>
+                <div class="col-lg-8 itembox-data">
+                    <div class="itembox-header">
+                        <h3 class="itembox-header-title">5. Forum Nowoczesnego Controllingu</h3>
+                        <h3 class="itembox-header-subtitle">Skuteczny controlling - rentowne przedsiębiorstwo. Koszty - oszczędności - optymalizacje</h3>
+                    </div>
+                    <div class="itembox-body">
+                        <div class="itembox-action">
+                            <p>Wykładowcy: Zespół ekspertów</p>
+                            <a href="courses_details.html" class="btn btn-border">Warszawa, 24-25.10.2019</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 itembox">
+                <div class="col-lg-4 itembox-image-hld">
+                    <span class="label label-itembox">e-kurs mailowy</span>
+                    <img src="https://via.placeholder.com/350x288/ddd/000.png" />
+                </div>
+                <div class="col-lg-8 itembox-data">
+                    <div class="itembox-header">
+                        <h3 class="itembox-header-title">Umowa zlecenia - przegląd ryzyk formalno-prawnych</h3>
+                        <h3 class="itembox-header-subtitle">Zagadnienia praktyczne, przegląd orzecznictwa, odpowiedzi na najważniejsze pytania</h3>
+                    </div>
+                    <div class="itembox-body">
+                        <div class="itembox-action">
                             <p>Wykładowcy: Zespół ekspertów</p>
                             <a href="courses_details.html" class="btn btn-border">Szczegóły</a>
                         </div>
@@ -227,7 +277,7 @@
             </div>
         </div>
     </div>
-</main> -->
+</main>
 
 <section class="theytrusted">
     <div class="container">
@@ -279,18 +329,17 @@
 <footer class="footersite">
         <div class="container">
             <div class="footersite-data row">
-                <div class="col">
+                <div class="col-sm-6 col-md-4">
                     <div class="logo">
                         <a href="index.html"><img src="images/explanator-turquoise.svg" class="img-fluid" alt=""></a>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa consectetur assumenda.</p>
                     <ul class="list list--icon list--white">
-                        <li class="list-item"><a href="mailto:biuro@explanator.pl">biuro@explanator.pl</a></li>
-                        <li class="list-item">tel. (61) 85 50 112</li>
-                        <li class="list-item">Kościelna 30 lok. 59</li>
+                        <li class="list-item"><i class="icon icon--email"></i><a href="mailto:biuro@explanator.pl">biuro@explanator.pl</a></li>
+                        <li class="list-item"><i class="icon icon--phone"></i>tel. (61) 85 50 112</li>
+                        <li class="list-item"><i class="icon icon--location"></i>Kościelna 30 lok. 59</li>
                     </ul>
                 </div>
-                <div class="col">
+                <div class="col-sm-6 col-md-4">
                     <div class="header">
                         <h3 class="header-title header-title--section  header-title--white"><span>Na skróty</span></h3>
                     </div>
@@ -301,19 +350,19 @@
                                 <li class="nav-bull-item"><a href="courses_listing.html">Szkolenia otwarte</a></li>
                                 <li class="nav-bull-item"><a href="#">Szkolenia zamknięte</a></li>
                                 <li class="nav-bull-item"><a href="#">Publikacje</a></li>
-                                <li class="nav-bull-item"><a href="about_us.html">O nas</a></li>
-                                <li class="nav-bull-item"><a href="contact.html">Kontakt</a></li>
                             </ul>
                         </li>
                         <li class="list-2-col-inner">
                             <ul class="nav-bull">
                                 <li class="nav-bull-item"><a href="#">Regulamin</a></li>
                                 <li class="nav-bull-item"><a href="#">Polityka prywatności</a></li>
+                                <li class="nav-bull-item"><a href="about_us.html">O nas</a></li>
+                                <li class="nav-bull-item"><a href="contact.html">Kontakt</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-                <div class="col">
+                <div class="col-sm-12 col-md-4">
                     <div class="header">
                         <h3 class="header-title header-title--section header-title--white"><span>Newsletter</span></h3>
                     </div>
