@@ -68,7 +68,7 @@
             width: 5px;
             height: 9px;
             display: inline-block;
-            @include inline-svg-icon("icon-arrow", #059b99, center, 5px 9px);
+            @include inline-svg-icon("icon-arrow-right", #059b99, center, 5px 9px);
         }
     }
 }

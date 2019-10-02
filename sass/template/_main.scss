@@ -56,6 +56,7 @@ i {
         &:hover, &:focus {
             color: lighten(#292c37, 10%);
             background: darken(#ffffff, 10%);
+            border-color: lighten(#292c37, 50%);
         }
     }
     &-primary {
@@ -76,6 +77,7 @@ i {
             &:hover, &:focus {
                 color: lighten(#292c37, 15%);
                 background: darken(#ffffff, 15%);
+                border-color: #292c37;
             }
         }
     }
@@ -83,8 +85,25 @@ i {
 
 .icon {
     margin-right: 10px;
-    &--arrow {
-
+    &--arrow-up {
+        width: 12px;
+        height: 7px;
+        @include inline-svg-icon("icon-arrow-up", #292c37, center, 11px 7px);
+    }
+    &--arrow-right {
+        width: 7px;
+        height: 12px;
+        @include inline-svg-icon("icon-arrow-right", #292c37, center, 7px 11px);
+    }
+    &--arrow-down {
+        width: 12px;
+        height: 7px;
+        @include inline-svg-icon("icon-arrow-down", #292c37, center, 11px 7px);
+    }
+    &--arrow-left {
+        width: 7px;
+        height: 12px;
+        @include inline-svg-icon("icon-arrow-left", #292c37, center, 7px 11px);
     }
     &--calendar {
         width: 43px;
@@ -462,39 +481,92 @@ i {
     &-action {
         margin: 10px 0 60px 0;
         text-align: right;
+        .icon {
+            margin: 0;
+            vertical-align: initial;
+        }
         .pagination {
+            display: inline-block;
             li {
-                background: #ffffff;
-                border: 1px solid #dddddd;
-                text-decoration: none;
                 display: inline-block;
+                list-style: none;
                 a,
                 span {
                     margin: 0 0 0 4px;
-                    padding: 4px 8px;
+                    padding: 8px 15px;
                     color: #282828;
                     font: normal 1rem/100% $font-title-sec;
                     border: 1px solid transparent;
                     text-decoration: none;
-                }
-                &.prev {
-
+                    background: #ffffff;
+                    border: 1px solid #dddddd;
+                    text-decoration: none;
+                    &:hover, &:focus {
+                        color: lighten(#292c37, 10%);
+                        background: darken(#ffffff, 10%);
+                        border-color: lighten(#292c37, 50%);
+                    }
                 }
                 &.active {
-                    background: $main-color;
                     a {
+                        background: $main-color;
+                        border-color: $main-color;
                         color: #ffffff;
+                        &:hover, &:focus {
+                            background: darken($main-color, 10%);
+                        }
                     }
 
                 }
                 &.blank {
+                    a,
+                    span {
+                        background: none;
+                        border: 1px solid transparent;
+                    }
 
                 }
+                &.prev,
                 &.next {
-
+                    a,
+                    span {
+                        padding: 7px 15px 9px 15px;
+                    }
+                }
+                &.next {
+                    .icon {
+                        margin-left: 5px;
+                    }
+                }
+                &.prev {
+                    .icon {
+                        margin-right: 5px;
+                    }
                 }
             }
 
+        }
+        .btn {
+            padding: 11px 15px;
+        }
+        .dropdown-toggle {
+            .icon {
+                margin: 0 0 2px 5px
+            }
+        }
+        .dropdown-menu {
+            margin: 0;
+            border: 1px solid #dddddd;
+            .dropdown-item {
+                a {
+                    color: #282828;
+                    text-decoration: none;
+                    &:hover, &:focus {
+                        text-decoration: underline;
+                    }
+                }
+
+            }
         }
     }
 }
