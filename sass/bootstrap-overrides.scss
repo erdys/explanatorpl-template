@@ -10,6 +10,10 @@ $enable-grid-classes: true;
 $enable-rounded: false;
 $enable-caret: false;
 
+$danger: #dd0000;
+$success: #6fa227;
+
+
 @import "bootstrap/functions";
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
@@ -19,6 +23,7 @@ $enable-caret: false;
 @import "bootstrap/utilities";
 @import "bootstrap/grid";
 @import "bootstrap/forms";
+@import "bootstrap/custom-forms";
 @import "bootstrap/images";
 @import "bootstrap/dropdown";
 @import "bootstrap/print";

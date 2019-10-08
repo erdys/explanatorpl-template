@@ -1,15 +1,87 @@
 .form-control {
-    color: #000;
-    border: 1px solid #ebebeb;
-    font-size: 12px;
-    @include rounded(0px);
-    @include boxShadow(none);
+    color: #232323;
+    border: 1px solid #dddddd;
+    font-size: 1rem;
     &:focus {
-        background: #ebebeb;
+        background: #ffffff;
         border: 1px solid #ebebeb;
-        @include boxShadow(none);
+        @include boxShadow(0 0 0 .2rem rgba($main-color, .4));
     }
-    @include placeholder(#aaaaaa);
+    @include placeholder(#3e3e3e);
+}
+.form-inline .form-control {
+    &.form-control-number {
+         margin-left: 1rem;
+         padding: .5rem 0.5rem;
+         width: 4rem;
+         height: calc(1.5em + 1rem + 2px);
+         line-height: 1.5;
+         font-weight: bold;
+         text-align: center;
+    }
+}
+
+.form-list-number {
+    margin: 1rem 0;
+    list-style: decimal;
+    font-weight: bold;
+    .form-list-item {
+        padding-left: 1.5rem;
+    }
+    label {
+        font-weight: normal;
+    }
+
+}
+
+.form-register {
+    margin: 30px 0;
+    @include clearfix;
+}
+
+.form,
+.form-row {
+    textarea {
+        min-height: 10rem;
+    }
+    .custom-control-label {
+        &::before,
+        &::after {
+            top: 0.1rem;
+            left: -2rem;
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+    }
+    .custom-control-label {
+        margin-left: 0.5rem;
+    }
+    .custom-control-input {
+        &:checked ~ .custom-control-label {
+            &::before {
+                border-color: $main-color;
+                background-color: $main-color;
+            }
+        }
+        &:focus ~ .custom-control-label {
+            &::before {
+                @include boxShadow(0 0 0 .2rem rgba($main-color, .4));
+            }
+        }
+        &:focus::not(:checked) ~ .custom-control-label {
+            &::before {
+                border-color: $main-color;
+            }
+        }
+    }
+    span.required {
+        color: #dd0000;
+    }
+    span.break {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
 }
 
 .form-newsletter {
@@ -54,6 +126,7 @@
             &:focus {
                 color: #ffffff;
                 background: darken(#17a9ad, 5%);
+                @include boxShadow(0 0 0 .2rem rgba(darken(#17a9ad, 5%), .4));
             } 
         }
         .btn-submit {
@@ -75,6 +148,7 @@
             &:focus {
                 color: #ffffff;
                 background: lighten(#47464a, 10%);
+                @include boxShadow(0 0 0 .2rem rgba(lighten(#47464a, 10%), .4));
             } 
         }
         .btn-submit {

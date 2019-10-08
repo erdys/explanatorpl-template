@@ -2,24 +2,24 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" name="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Explanator - Szkolenia otwarte, szkolenia zamknięte i kursy on-line</title>
-    <meta name="keywords" name="" />
-    <meta name="description" name="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/dev.css" />
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="vendor/icheck/skins/square/red.css" />
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/modernizr-custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/modernizr-custom.js"></script>
 </head>
 
 <body>
 
 <header class="headersite">
-    <section class="headersite-top">
+    <div class="headersite-top">
         <div class="container">
             <div class="row">
                 <ul class="nav-help">
@@ -31,14 +31,14 @@
                 </ul>
             </div>
         </div>
-    </section>
-    <section class="headersite-bottom">
+    </div>
+    <div class="headersite-bottom">
         <div class="container">
             <div class="row">
                 <div class="col logo">
-                    <a href="index.html"><img src="images/explanator-red.svg" class="img-fluid" alt=""></a>
+                    <a href="index.html"><img src="images/explanator-red.svg" class="img-fluid" alt="" /></a>
                 </div>
-                <menu class="col-lg-auto navbar">
+                <nav class="col-lg-auto navbar">
                     <ul class="navbar-inner">
                         <li class="navbar-item"><a href="courses_open.html">Szkolenia otwarte</a></li>
                         <li class="navbar-item"><a href="courses_closed.html">Szkolenia zamknięte</a></li>
@@ -46,13 +46,13 @@
                         <li class="navbar-item"><a href="about_us.html">O nas</a></li>
                         <li class="navbar-item"><a href="contact.html">Kontakt</a></li>
                     </ul>
-                </menu>
+                </nav>
             </div>
         </div>
-    </section>
+    </div>
 </header>
 
-<secion class="promotional">
+<section class="promotional">
     <div class="container-fluid">
         <div class="row">
             <div class="promotional-slider col-7">
@@ -60,7 +60,7 @@
                     <li class="item">
                         <a href="#">
                             <div class="item-image">
-                                <img src="http://via.placeholder.com/1200x900/333/000000?text=1 - 1200x900" />
+                                <img src="http://via.placeholder.com/1200x900/333/000000?text=1-1200x900" alt="" />
                             </div>
                             <div class="col-8 item-data">
                                 <h2 class="item-title">5. Forum Nowoczesnego Controllinguy</h2>
@@ -72,7 +72,7 @@
                     <li class="item">
                         <a href="#">
                             <div class="item-image">
-                                <img src="http://via.placeholder.com/1200x900/DDD/000000?text=2 - 1200x900" />
+                                <img src="http://via.placeholder.com/1200x900/DDD/000000?text=2-1200x900" alt="" />
                             </div>
                             <div class="col-8 item-data">
                                 <h2 class="item-title">Storytelling jako skuteczne narzędzie sprzedażowe</h2>
@@ -84,7 +84,7 @@
                     <li class="item">
                         <a href="#">
                             <div class="item-image">
-                                <img src="http://via.placeholder.com/1200x900/ccc/000000?text=3 - 1200x900" />
+                                <img src="http://via.placeholder.com/1200x900/ccc/000000?text=3-1200x900" alt="" />
                             </div>
                             <div class="col-8 item-data">
                                 <h2 class="item-title">6. Forum Szefów Sprzedaży</h2>
@@ -96,7 +96,7 @@
                 </ul>
                 <div class="slick-slider-dots promotional-slider-dots"></div>
             </div>
-            <script type="text/javascript">
+            <script>
                 $(document).ready(function(){
                     $('.js-slick-items.promotional-slider-inner').slick({
                         slide: 'li',
@@ -112,7 +112,7 @@
                 });
             </script>
             <div class="promotional-text col-5">
-                <div class="col-6">
+                <div class="col-md-8 col-lg-9 col-xl-7">
                     <div class="header">
                         <h3 class="header-title header-title--promotional"><span><a href="#">Szkolenia zamknięte</a></span></h3>
                     </div>
@@ -122,7 +122,7 @@
             </div>
         </div>
     </div>
-</secion>
+</section>
 
 <main>
     <div class="container">
@@ -133,7 +133,7 @@
             <div class="col-lg-12 itembox">
                 <div class="col-lg-4 itembox-image-hld">
                     <span class="label label-itembox">forum</span>
-                    <img src="https://via.placeholder.com/380x285/ddd/000.png" />
+                    <img src="https://via.placeholder.com/380x285/ddd/000.png" alt="" />
                 </div>
                 <div class="col-lg-8 itembox-data">
                     <div class="itembox-header">
@@ -158,7 +158,7 @@
             <div class="col-lg-12 itembox">
                 <div class="col-lg-4 itembox-image-hld">
                     <span class="label label-itembox">e-kurs mailowy</span>
-                    <img src="https://via.placeholder.com/380x285/ddd/000.png" />
+                    <img src="https://via.placeholder.com/380x285/ddd/000.png" alt="" />
                 </div>
                 <div class="col-lg-8 itembox-data">
                     <div class="itembox-header">
@@ -207,7 +207,7 @@
     </div>
 </section>
 
-<main>
+<section>
     <div class="container">
         <div class="header center">
             <h3 class="header-title header-title--name"><span>Zobacz również</span></h3>
@@ -216,7 +216,9 @@
             <div class="col-lg-6 itembox">
                 <div class="col-lg-4 itembox-image-hld">
                     <span class="label label-itembox">forum</span>
-                    <img src="https://via.placeholder.com/285x380/ddd/000.png" />
+                    <a href="courses_details.html">
+                        <img src="https://via.placeholder.com/285x380/ddd/000.png" alt="" />
+                    </a>
                 </div>
                 <div class="col-lg-8 itembox-data">
                     <div class="itembox-header">
@@ -235,7 +237,9 @@
             <div class="col-lg-6 itembox">
                 <div class="col-lg-4 itembox-image-hld">
                     <span class="label label-itembox">e-kurs mailowy</span>
-                    <img src="https://via.placeholder.com/285x380/ddd/000.png" />
+                    <a href="courses_details.html">
+                        <img src="https://via.placeholder.com/285x380/ddd/000.png" alt="" />
+                    </a>
                 </div>
                 <div class="col-lg-8 itembox-data">
                     <div class="itembox-header">
@@ -254,7 +258,9 @@
             <div class="col-lg-6 itembox">
                 <div class="col-lg-4 itembox-image-hld">
                     <span class="label label-itembox">forum</span>
-                    <img src="https://via.placeholder.com/285x380/ddd/000.png" />
+                    <a href="courses_details.html">
+                        <img src="https://via.placeholder.com/285x380/ddd/000.png" alt="" />
+                    </a>
                 </div>
                 <div class="col-lg-8 itembox-data">
                     <div class="itembox-header">
@@ -273,7 +279,9 @@
             <div class="col-lg-6 itembox">
                 <div class="col-lg-4 itembox-image-hld">
                     <span class="label label-itembox">e-kurs mailowy</span>
-                    <img src="https://via.placeholder.com/285x380/ddd/000.png" />
+                    <a href="courses_details.html">
+                        <img src="https://via.placeholder.com/285x380/ddd/000.png" alt="" />
+                    </a>
                 </div>
                 <div class="col-lg-8 itembox-data">
                     <div class="itembox-header">
@@ -291,7 +299,7 @@
             </div>
         </div>
     </div>
-</main>
+</section>
 
 <section class="theytrusted">
     <div class="container">
@@ -301,15 +309,15 @@
         <div class="row">
             <div class="col-12">
                 <ul class="js-slick-items slick-slider theytrusted-inner">
-                    <li class="item"><img src="http://via.placeholder.com/250x65/ffcffc/000000?text=1" /></li>
-                    <li class="item"><img src="http://via.placeholder.com/250x65/ffcccc/000000?text=2" /></li>
-                    <li class="item"><img src="http://via.placeholder.com/250x65/cccffc/000000?text=3" /></li>
-                    <li class="item"><img src="http://via.placeholder.com/250x65/ffccfc/000000?text=4" /></li>
-                    <li class="item"><img src="http://via.placeholder.com/250x65/ffcccc/000000?text=5" /></li>
-                    <li class="item"><img src="http://via.placeholder.com/250x65/cffffc/000000?text=6" /></li>
+                    <li class="item"><img src="http://via.placeholder.com/250x65/ffcffc/000000?text=1" alt="" /></li>
+                    <li class="item"><img src="http://via.placeholder.com/250x65/ffcccc/000000?text=2" alt="" /></li>
+                    <li class="item"><img src="http://via.placeholder.com/250x65/cccffc/000000?text=3" alt="" /></li>
+                    <li class="item"><img src="http://via.placeholder.com/250x65/ffccfc/000000?text=4" alt="" /></li>
+                    <li class="item"><img src="http://via.placeholder.com/250x65/ffcccc/000000?text=5" alt="" /></li>
+                    <li class="item"><img src="http://via.placeholder.com/250x65/cffffc/000000?text=6" alt="" /></li>
                 </ul>
             </div>
-            <script type="text/javascript">
+            <script>
                 $(document).ready(function(){
                     $('.js-slick-items.theytrusted-inner').slick({
                         slide: 'li',
@@ -341,67 +349,66 @@
 </section>
 
 <footer class="footersite">
-        <div class="container">
-            <div class="footersite-data row">
-                <div class="col-sm-6 col-md-4">
-                    <div class="logo">
-                        <a href="index.html"><img src="images/explanator-turquoise.svg" class="img-fluid" alt=""></a>
-                    </div>
-                    <ul class="list list--icon list--white">
-                        <li class="list-item"><i class="icon icon--email"></i><a href="mailto:biuro@explanator.pl">biuro@explanator.pl</a></li>
-                        <li class="list-item"><i class="icon icon--phone"></i>tel. (61) 85 50 112</li>
-                        <li class="list-item"><i class="icon icon--location"></i>Kościelna 30 lok. 59</li>
-                    </ul>
+    <div class="container">
+        <div class="footersite-data row">
+            <div class="col-sm-6 col-md-4">
+                <div class="logo">
+                    <a href="index.html"><img src="images/explanator-turquoise.svg" class="img-fluid" alt="" /></a>
                 </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="header">
-                        <h3 class="header-title header-title--section  header-title--white"><span>Na skróty</span></h3>
-                    </div>
-                    <ul class="list-2-col">
-                        <li class="list-2-col-inner">
-                            <ul class="nav-bull">
-                                <li class="nav-bull-item"><a href="index.html">Strona główna</a></li>
-                                <li class="nav-bull-item"><a href="courses_open.html">Szkolenia otwarte</a></li>
-                                <li class="nav-bull-item"><a href="courses_closed.html">Szkolenia zamknięte</a></li>
-                                <li class="nav-bull-item"><a href="publications.html">Publikacje</a></li>
-                            </ul>
-                        </li>
-                        <li class="list-2-col-inner">
-                            <ul class="nav-bull">
-                                <li class="nav-bull-item"><a href="#">Regulamin</a></li>
-                                <li class="nav-bull-item"><a href="#">Polityka prywatności</a></li>
-                                <li class="nav-bull-item"><a href="about_us.html">O nas</a></li>
-                                <li class="nav-bull-item"><a href="contact.html">Kontakt</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="header">
-                        <h3 class="header-title header-title--section header-title--white"><span>Newsletter</span></h3>
-                    </div>
-                    <p>Niezawodna informacja na temat wydarzeń branżowych, nowych publikacji i aktualizacji serwisu.</p>
-                    <form class="form-inline form-newsletter form-newsletter--bottom">
-                        <div class="form-group form-group-submit">
-                            <input type="email" class="form-control" placeholder="Twój adres e-mail">
-                            <button type="submit" class="btn btn-submit">Wyślij</button>
-                        </div>
-                    </form>
-                </div>
+                <ul class="list list--icon list--white">
+                    <li class="list-item"><i class="icon icon--email"></i><a href="mailto:biuro@explanator.pl">biuro@explanator.pl</a></li>
+                    <li class="list-item"><i class="icon icon--phone"></i>tel. (61) 85 50 112</li>
+                    <li class="list-item"><i class="icon icon--location"></i>Kościelna 30 lok. 59</li>
+                </ul>
             </div>
-            <div class="footersite-copyright row">
-                <div class="col">
-                    <p>Copyright &copy; 2009-2019 All Rights Reserved. Wszystkie prawa zastrzeżone.</p>
-                    <p>Explanator - szkolenia obejmujące zagadnienia prawne, finansowo-podatkowe i problemy zarządzania przedsiębiorstwami i instytucjami publicznymi.</p>
-                    <p>Ta strona jest chroniona przez reCAPTCHA i obowiązują na niej <a href="#">polityka prywatności</a> oraz <a href="#">warunki korzystania</a> z usługi firmy Google.</p>
+            <div class="col-sm-6 col-md-4">
+                <div class="header">
+                    <h3 class="header-title header-title--section  header-title--white"><span>Na skróty</span></h3>
                 </div>
+                <ul class="list-2-col">
+                    <li class="list-2-col-inner">
+                        <ul class="nav-bull">
+                            <li class="nav-bull-item"><a href="index.html">Strona główna</a></li>
+                            <li class="nav-bull-item"><a href="courses_open.html">Szkolenia otwarte</a></li>
+                            <li class="nav-bull-item"><a href="courses_closed.html">Szkolenia zamknięte</a></li>
+                            <li class="nav-bull-item"><a href="publications.html">Publikacje</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-2-col-inner">
+                        <ul class="nav-bull">
+                            <li class="nav-bull-item"><a href="#">Regulamin</a></li>
+                            <li class="nav-bull-item"><a href="#">Polityka prywatności</a></li>
+                            <li class="nav-bull-item"><a href="about_us.html">O nas</a></li>
+                            <li class="nav-bull-item"><a href="contact.html">Kontakt</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="header">
+                    <h3 class="header-title header-title--section header-title--white"><span>Newsletter</span></h3>
+                </div>
+                <p>Niezawodna informacja na temat wydarzeń branżowych, nowych publikacji i aktualizacji serwisu.</p>
+                <form class="form-inline form-newsletter form-newsletter--bottom">
+                    <div class="form-group form-group-submit">
+                        <input type="email" class="form-control" placeholder="Twój adres e-mail">
+                        <button type="submit" class="btn btn-submit">Wyślij</button>
+                    </div>
+                </form>
             </div>
         </div>
+        <div class="footersite-copyright row">
+            <div class="col">
+                <p>Copyright &copy; 2009-2019 All Rights Reserved. Wszystkie prawa zastrzeżone.</p>
+                <p>Explanator - szkolenia obejmujące zagadnienia prawne, finansowo-podatkowe i problemy zarządzania przedsiębiorstwami i instytucjami publicznymi.</p>
+                <p>Ta strona jest chroniona przez reCAPTCHA i obowiązują na niej <a href="#">polityka prywatności</a> oraz <a href="#">warunki korzystania</a> z usługi firmy Google.</p>
+            </div>
+        </div>
+    </div>
 </footer>
 
-<script type="text/javascript" src="js/site.js"></script>
-<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
-<script type="text/javascript" src="vendor/icheck/icheck.min.js"></script>
+<script src="js/site.js"></script>
+<script src="vendor/slick/slick.min.js"></script>
 
 </body>
 </html>

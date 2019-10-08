@@ -1,10 +1,282 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Explanator - Szkolenia otwarte, szkolenia zamknięte i kursy on-line</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/dev.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/modernizr-custom.js"></script>
 </head>
+
 <body>
-	
+
+<header class="headersite">
+    <div class="headersite-top">
+        <div class="container">
+            <div class="row">
+                <ul class="nav-help">
+                    <li class="nav-help-item"><i class="icon icon--email"></i><a href="mailto:biuro@explanator.pl">biuro@explanator.pl</a></li>
+                    <li class="nav-help-item"><i class="icon icon--phone"></i>tel. (61) 85 50 112</li>
+                    <li class="nav-help-item"><i class="icon icon--help"></i><a href="#">Pomoc</a></li>
+                    <li class="nav-help-item"><i class="icon icon--cart"></i><a href="#">Koszyk (0)</a></li>
+                    <li class="nav-help-item"><i class="icon icon--search"></i><a href="#">Szukaj</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="headersite-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col logo">
+                    <a href="index.html"><img src="images/explanator-red.svg" class="img-fluid" alt="" /></a>
+                </div>
+                <nav class="col-lg-auto navbar">
+                    <ul class="navbar-inner">
+                        <li class="navbar-item"><a href="courses_open.html">Szkolenia otwarte</a></li>
+                        <li class="navbar-item"><a href="courses_closed.html">Szkolenia zamknięte</a></li>
+                        <li class="navbar-item"><a href="publications.html">Publikacje</a></li>
+                        <li class="navbar-item"><a href="about_us.html">O nas</a></li>
+                        <li class="navbar-item"><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="contentbox contentbox--contact">
+    <div class="container">
+        <div class="header center">
+            <h3 class="header-title header-title--name"><span>Kontakt</span></h3>
+        </div>
+    </div>
+    <div class="container contentbox-main-hld">
+        <div class="row contentbox-main">
+            <div class="col contact-details">
+                <div class="header">
+                    <h4 class="header-title header-title--section"><span>Dane kontaktowe</span></h4>
+                </div>
+                <p><b>EXPLANATOR</b><br />
+                ul. Kościelna 30 lok. 59,<br />
+                60-538 Poznań<br />
+                NIP: 778-115-70-12<br />
+                REGON: 634548840</p>
+
+                <p>tel. (61) 85 50 112 <br />
+                fax (61) 85 50 078<br />
+                GSM 570 975 799<br />
+                GSM 661 870 835<br />
+                <a href="mailto:biuro@explanator.pl">biuro@explanator.pl</a></p>
+
+                <p>Jesteśmy do dyspozycji w godzinach 8-16 od poniedziałku do piątku.</p>
+                <p>Nr rejestru firm szkoleniowych <b>22102131</b></p>
+            </div>
+            <div class="col-md-auto contact-image">
+                <div class="contact-image-hld">
+                    <img src="http://via.placeholder.com/210x374/ffcffc/000000" alt="" />
+                </div>
+            </div>
+            <div class="col-lg-5 contact-form">
+                <div class="header">
+                    <h4 class="header-title header-title--section"><span>Formularz kontaktowy</span></h4>
+                </div>
+                <p>Zachęcamy do kontaktu z wykorzystaniem poniższego formularza. Zapraszamy do składania pytań, sugestii tematów szkoleń, propozycji współpracy.</p>
+                <form class="form form-register needs-validation" novalidate>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Imię i nazwisko" required>
+                        <div class="invalid-feedback">
+                            Pole jest wymagane.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="E-mail" required>
+                        <div class="invalid-feedback">
+                            Pole jest wymagane.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Wiadomość" required></textarea>
+                        <div class="invalid-feedback">
+                            Pole jest wymagane.
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-primary btn-submit pull-right" value="Wyślij wiadomość">
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<section class="insetbox">
+    <div class="container">
+        <div class="header">
+            <h3 class="header-title header-title--simple">Szkolenia zamknięte</h3>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="contact.html" class="btn btn-primary btn-primary--white pull-right">Zapytanie ofertowe</a>
+                <p>Zapraszamy do składania zapytań ofertowych dotyczących <b>SZKOLEŃ ZAMKNIĘTYCH</b></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="maps">
+    <div class="maps-inner" id="map"></div>
+</div>
+
+<script>
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: {lat: 52.4151389, lng: 16.9050168},
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                position: google.maps.ControlPosition.TOP_CENTER
+            },
+            zoomControl: true,
+            zoomControlOptions: {
+                position: google.maps.ControlPosition.LEFT_CENTER
+            },
+            scaleControl: true,
+            streetViewControl: true,
+            streetViewControlOptions: {
+                position: google.maps.ControlPosition.LEFT_TOP
+            },
+            fullscreenControl: true,
+            styles: [{"featureType": "water", "elementType": "geometry.fill", "stylers": [{"color": "#d3d3d3"} ] }, {"featureType": "transit", "stylers": [{"color": "#808080"}, {"visibility": "off"} ] }, {"featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{"visibility": "on"}, {"color": "#b3b3b3"} ] }, {"featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{"color": "#ffffff"} ] }, {"featureType": "road.local", "elementType": "geometry.fill", "stylers": [{"visibility": "on"}, {"color": "#ffffff"}, {"weight": 1.8 } ] }, {"featureType": "road.local", "elementType": "geometry.stroke", "stylers": [{"color": "#d7d7d7"} ] }, {"featureType": "poi", "elementType": "geometry.fill", "stylers": [{"visibility": "on"}, {"color": "#ebebeb"} ] }, {"featureType": "administrative", "elementType": "geometry", "stylers": [{"color": "#a7a7a7"} ] }, {"featureType": "road.arterial", "elementType": "geometry.fill", "stylers": [{"color": "#ffffff"} ] }, {"featureType": "road.arterial", "elementType": "geometry.fill", "stylers": [{"color": "#ffffff"} ] }, {"featureType": "landscape", "elementType": "geometry.fill", "stylers": [{"visibility": "on"}, {"color": "#efefef"} ] }, {"featureType": "road", "elementType": "labels.text.fill", "stylers": [{"color": "#696969"} ] }, {"featureType": "administrative", "elementType": "labels.text.fill", "stylers": [{"visibility": "on"}, {"color": "#737373"} ] }, {"featureType": "poi", "elementType": "labels.icon", "stylers": [{"visibility": "off"} ] }, {"featureType": "poi", "elementType": "labels", "stylers": [{"visibility": "off"} ] }, {"featureType": "road.arterial", "elementType": "geometry.stroke", "stylers": [{"color": "#d6d6d6"} ] }, {"featureType": "road", "elementType": "labels.icon", "stylers": [{"visibility": "off"} ] }, {}, {"featureType": "poi", "elementType": "geometry.fill", "stylers": [{"color": "#dadada"} ]}],
+            maxZoom: 20,
+            minZoom: 0,
+        });
+
+        (function(){
+            var markerOptions = {
+                map: map,
+                position: {
+                    lat: 52.415129,
+                    lng: 16.906093,
+                }
+            };
+            
+            markerOptions.icon = {
+                path: 'M11 2c-3.9 0-7 3.1-7 7 0 5.3 7 13 7 13 0 0 7-7.7 7-13 0-3.9-3.1-7-7-7Zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5 0-1.4 1.1-2.5 2.5-2.5 1.4 0 2.5 1.1 2.5 2.5 0 1.4-1.1 2.5-2.5 2.5Z',
+                scale: 3,
+                anchor: new google.maps.Point(11, 22),
+                fillOpacity: 1,
+                fillColor: '#059b9a',
+                strokeOpacity: 0
+            };
+            
+            var marker = new google.maps.Marker(markerOptions);
+
+
+        })();
+
+    }
+</script>
+
+<section class="theytrusted">
+    <div class="container">
+        <div class="header center">
+            <h3 class="header-title header-title--name"><span>Zaufali nam</span></h3>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul class="js-slick-items slick-slider theytrusted-inner">
+                    <li class="item"><img src="http://via.placeholder.com/250x65/ffcffc/000000?text=1" alt="" /></li>
+                    <li class="item"><img src="http://via.placeholder.com/250x65/ffcccc/000000?text=2" alt="" /></li>
+                    <li class="item"><img src="http://via.placeholder.com/250x65/cccffc/000000?text=3" alt="" /></li>
+                    <li class="item"><img src="http://via.placeholder.com/250x65/ffccfc/000000?text=4" alt="" /></li>
+                    <li class="item"><img src="http://via.placeholder.com/250x65/ffcccc/000000?text=5" alt="" /></li>
+                    <li class="item"><img src="http://via.placeholder.com/250x65/cffffc/000000?text=6" alt="" /></li>
+                </ul>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $('.js-slick-items.theytrusted-inner').slick({
+                        slide: 'li',
+                        arrows: false,
+                        dots: false,
+                        infinite: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</section>
+
+<footer class="footersite">
+    <div class="container">
+        <div class="footersite-data row">
+            <div class="col-sm-6 col-md-4">
+                <div class="logo">
+                    <a href="index.html"><img src="images/explanator-turquoise.svg" class="img-fluid" alt="" /></a>
+                </div>
+                <ul class="list list--icon list--white">
+                    <li class="list-item"><i class="icon icon--email"></i><a href="mailto:biuro@explanator.pl">biuro@explanator.pl</a></li>
+                    <li class="list-item"><i class="icon icon--phone"></i>tel. (61) 85 50 112</li>
+                    <li class="list-item"><i class="icon icon--location"></i>Kościelna 30 lok. 59</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="header">
+                    <h3 class="header-title header-title--section  header-title--white"><span>Na skróty</span></h3>
+                </div>
+                <ul class="list-2-col">
+                    <li class="list-2-col-inner">
+                        <ul class="nav-bull">
+                            <li class="nav-bull-item"><a href="index.html">Strona główna</a></li>
+                            <li class="nav-bull-item"><a href="courses_open.html">Szkolenia otwarte</a></li>
+                            <li class="nav-bull-item"><a href="courses_closed.html">Szkolenia zamknięte</a></li>
+                            <li class="nav-bull-item"><a href="publications.html">Publikacje</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-2-col-inner">
+                        <ul class="nav-bull">
+                            <li class="nav-bull-item"><a href="#">Regulamin</a></li>
+                            <li class="nav-bull-item"><a href="#">Polityka prywatności</a></li>
+                            <li class="nav-bull-item"><a href="about_us.html">O nas</a></li>
+                            <li class="nav-bull-item"><a href="contact.html">Kontakt</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="header">
+                    <h3 class="header-title header-title--section header-title--white"><span>Newsletter</span></h3>
+                </div>
+                <p>Niezawodna informacja na temat wydarzeń branżowych, nowych publikacji i aktualizacji serwisu.</p>
+                <form class="form-inline form-newsletter form-newsletter--bottom">
+                    <div class="form-group form-group-submit">
+                        <input type="email" class="form-control" placeholder="Twój adres e-mail">
+                        <button type="submit" class="btn btn-submit">Wyślij</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footersite-copyright row">
+            <div class="col">
+                <p>Copyright &copy; 2009-2019 All Rights Reserved. Wszystkie prawa zastrzeżone.</p>
+                <p>Explanator - szkolenia obejmujące zagadnienia prawne, finansowo-podatkowe i problemy zarządzania przedsiębiorstwami i instytucjami publicznymi.</p>
+                <p>Ta strona jest chroniona przez reCAPTCHA i obowiązują na niej <a href="#">polityka prywatności</a> oraz <a href="#">warunki korzystania</a> z usługi firmy Google.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/site.js"></script>
+<script src="vendor/slick/slick.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
 </body>
 </html>

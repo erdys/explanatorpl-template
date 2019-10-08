@@ -39,12 +39,12 @@ i {
     text-align: center;
 }
 
-
 .btn {
     border: none;
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
+    outline: none;
     @include transition(all .2s);
     &-border {
         margin: 0;
@@ -173,6 +173,11 @@ i {
         width: 22px;
         height: 22px;
         @include inline-svg-icon("icon-print", #383e42, center, 22px 22px);
+    }
+    &--close {
+        width: 25px;
+        height: 25px;
+        @include inline-svg-icon("icon-close", #383e42, center, 25px 25px);
     }
 }
 
@@ -374,13 +379,18 @@ i {
             right: 0;
             z-index: 100;
         }
-        img {
-            min-width: 100%;
-            min-height: 100%;
-            object-fit: cover;
-            @include transition(all .2s);
-            &:hover, &:focus {
-                @include scale3d(1.05, 1.05, 1);
+        a {
+            width: 100%;
+            height: 100%;
+            @include display-flex;
+            img {
+                min-width: 100%;
+                min-height: 100%;
+                object-fit: cover;
+                @include transition(all .2s);
+                &:hover, &:focus {
+                    @include scale3d(1.05, 1.05, 1);
+                }
             }
         }
     }
@@ -403,7 +413,10 @@ i {
             color: #000000;
             font: normal 2rem/100% $font-title;
             min-height: 40px;
-
+            a {
+                color: #000000;
+                text-decoration: none;
+            }
         }
         &-subtitle {
             color: #035959;
@@ -620,3 +633,57 @@ i {
     }
 }
 
+.maps {
+    &-inner {
+        width: 100%;
+        height: 400px;
+        background-color: #dddddd;
+    }
+}
+
+.popup {
+    &-inline {
+        margin: 15px  20px 15px 0;
+        padding: 20px;
+        border: 2px solid $main-color;
+        text-align: center;
+        position: relative;
+        z-index: 1001;
+        background: #ffffff;
+        p {
+            text-align: left;
+        }
+        .close-hld {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            .icon {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.js-overflow {
+    position: relative;
+    &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 110;
+        pointer-events: auto;
+        content: "";
+        background: rgba(255, 255, 255, 0.60);
+    }
+}
+
+.js-popup {
+    &-hide {
+        display: none;
+    }
+    &-show {
+    }
+}
