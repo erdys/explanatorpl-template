@@ -39,17 +39,22 @@ i {
     text-align: center;
 }
 
+.ml-40 {
+    margin-left: 40px;
+}
+
 .btn {
     border: none;
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
     outline: none;
+    text-align: center;
     @include transition(all .2s);
     &-border {
         margin: 0;
         padding: 15px 25px;
-        font: bold 1rem/100% $font-title-sec;
+        font: normal 1rem/100% $font-title-sec;
         border: 1px solid #dddddd;
         background: #ffffff;
         color: #292c37;
@@ -62,7 +67,7 @@ i {
     &-primary {
         margin: 0;
         padding: 15px 25px;
-        font: bold 1rem/100% $font-title-sec;
+        font: normal 1rem/100% $font-title-sec;
         border: 1px solid #b11623;
         background: #b11623;
         color: #ffffff;
@@ -204,9 +209,10 @@ i {
         background: #ffffff; 
     }
     .logo {
-        margin: 14px 0 auto 0;
-        // padding: 0 30px 0 0;
-        // @extend .col-3;
+        margin: auto 0 auto 0;
+        img {
+            width: 220px;
+        }
         a {
             display: block;
         }
@@ -228,13 +234,11 @@ i {
                 height: 100%;
             }
             li {
-                @include display-flex;
                 margin: 0;
             }
             .item {
                 position: relative;
                 &-data {
-                    height: 100%;
                     float: right;
                     z-index: 110;
                 }
@@ -295,13 +299,13 @@ i {
                 list-style: none;
                 text-align: left;
                 li {
-                    margin: 0 13px 5px 0;
+                    margin: 0 8px 5px 0;
                     padding: 0;
                     display: inline-block;
                     button {
                         padding: 0;
-                        width: 14px;
-                        height: 14px;
+                        width: 18px;
+                        height: 18px;
                         border: 0;
                         display: block;
                         outline: none;
@@ -309,13 +313,15 @@ i {
                         line-height: 0;
                         background: transparent;
                         border-radius: 50%;
-                        box-shadow: 0 0 0 3px #ffffff;
+                        border: 3px solid #ffffff;
                         @include transition(all .2s);
                     }
                     &.slick-active {
                         button {
+                            width: 24px;
+                            height: 24px;
                             background: #ffffff;
-                            box-shadow: 0 0 0 5px #ffffff;
+                            border: 3px solid #ffffff;
                         }
                     }
                 }
@@ -340,6 +346,11 @@ i {
     p {
         color: #cdebeb;
     }
+    .btn-primary--white {
+        &:hover, &:focus {
+            border: 1px solid #ffffff;
+        } 
+    } 
     &--admission {
         margin-bottom: 60px;
         padding: 40px 0;
@@ -377,6 +388,7 @@ i {
             top: 20px;
             right: 0;
             z-index: 100;
+            text-align: right;
         }
         a {
             width: 100%;
@@ -404,6 +416,7 @@ i {
     &-body {
         margin-top: auto;
         align-items: stretch;
+        position: relative;
         @include display-flex;
         @include flex-direction(row);
     }
@@ -494,7 +507,8 @@ i {
         margin: 10px 0 60px 0;
         text-align: right;
         .icon {
-            margin: 0;
+            margin-left: 5px;
+            margin-right: 0;
             vertical-align: initial;
         }
         .pagination {
@@ -548,10 +562,12 @@ i {
                 &.next {
                     .icon {
                         margin-left: 5px;
+                        margin-right: 0;
                     }
                 }
                 &.prev {
                     .icon {
+                        margin-left: 0;
                         margin-right: 5px;
                     }
                 }
@@ -589,7 +605,7 @@ i {
     &-data {
         .logo {
             margin-bottom: 14px;
-            width: 240px;
+            width: 190px;
             a {
                 display: block;
             }
@@ -652,6 +668,22 @@ i {
             .icon {
                 margin: 0;
             }
+        }
+        .btn {
+            margin-bottom: 5px; 
+
+        }
+        &--listing {
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            border: none;
+        }
+        &--details {
+
         }
     }
 }

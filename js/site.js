@@ -14,10 +14,10 @@ $('.js-popup-close').click(function(e) {
 
 $('.js-popup-show').click(function(e) {
     e.preventDefault();
-    $(this).prev().prev().slideDown('slow');
+    $('body').find('.popup-inline').slideDown('slow');
     $('body').find('.contentbox-main-hld').addClass('js-overflow');
-    $(this).prev().prev().addClass('js-popup-show');
-    $(this).prev().prev().removeClass('js-popup-hide');
+    $('body').find('.popup-inline').addClass('js-popup-show');
+    $('body').find('.popup-inline').removeClass('js-popup-hide');
 });
 
 (function() {
