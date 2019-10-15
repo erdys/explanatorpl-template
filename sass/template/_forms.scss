@@ -30,6 +30,7 @@
         align-items: center;
         border: 1px solid #dddddd;
         font-weight: bold;
+        cursor: pointer;
         @include display-flex;
     }
 }
