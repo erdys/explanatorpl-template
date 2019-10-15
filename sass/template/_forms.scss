@@ -11,22 +11,39 @@
 }
 .form-inline .form-control {
     &.form-control-number {
-         margin-left: 1rem;
-         padding: .5rem 0.5rem;
-         width: 4rem;
-         height: calc(1.5em + 1rem + 2px);
-         line-height: 1.5;
-         font-weight: bold;
-         text-align: center;
+        padding: .5rem 0.5rem;
+        width: 4rem;
+        height: calc(1.5em + 1rem + 2px);
+        line-height: 1.5;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.input-group {
+    margin-left: 1rem;
+    @include display-flex;
+    .input-number-decrement,
+    .input-number-increment {
+        width: 2rem;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #dddddd;
+        font-weight: bold;
+        @include display-flex;
     }
 }
 
 .form-list-number {
     margin: 1rem 0;
+    padding: 0 0 0 1rem;
     list-style: decimal;
     font-weight: bold;
     .form-list-item {
         padding-left: 1.5rem;
+        @include respond-below(md) {
+            padding-left: .5rem;
+        }
     }
     label {
         font-weight: normal;
@@ -86,11 +103,11 @@
 
 .form-newsletter {
     .form-control {
-        margin-bottom: 1rem;
         height: 40px;
         font-size: 1rem;
     }
     .form-group-submit {
+        margin-bottom: 0;
         position: relative;
         width: 100%;
         @include clearfix;

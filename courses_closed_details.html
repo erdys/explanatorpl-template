@@ -7,16 +7,18 @@
     <title>Explanator - Szkolenia otwarte, szkolenia zamknięte i kursy on-line</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/dev.css" />
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/drawer/drawer.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/modernizr-custom.js"></script>
+    <script src="vendor/iscroll/iscroll.min.js"></script>
+    <script src="vendor/drawer/drawer.min.js"></script>
 </head>
 
-<body>
+<body class="drawer drawer--left">
 
 <header class="headersite">
     <div class="headersite-top">
@@ -25,9 +27,7 @@
                 <ul class="nav-help">
                     <li class="nav-help-item"><i class="icon icon--email"></i><a href="mailto:biuro@explanator.pl">biuro@explanator.pl</a></li>
                     <li class="nav-help-item"><i class="icon icon--phone"></i>tel. (61) 85 50 112</li>
-                    <li class="nav-help-item"><i class="icon icon--help"></i><a href="#">Pomoc</a></li>
-                    <li class="nav-help-item"><i class="icon icon--cart"></i><a href="#">Koszyk (0)</a></li>
-                    <li class="nav-help-item"><i class="icon icon--search"></i><a href="#">Szukaj</a></li>
+                    <li class="nav-help-item js-search"><i class="icon icon--search"></i>Szukaj</li>
                 </ul>
             </div>
         </div>
@@ -35,6 +35,7 @@
     <div class="headersite-bottom">
         <div class="container">
             <div class="row">
+                <button type="button" class="btn btn-mobile drawer-toggle"><i class="icon icon--menu"></i></button>
                 <div class="col logo">
                     <a href="index.html"><img src="images/explanator-red.svg" alt="" /></a>
                 </div>
@@ -47,8 +48,29 @@
                         <li class="navbar-item"><a href="contact.html">Kontakt</a></li>
                     </ul>
                 </nav>
+                <button type="button" class="btn btn-mobile js-search"><i class="icon icon--search"></i></button>
             </div>
         </div>
+    </div>
+    <div class="drawer-nav">
+        <button type="button" class="btn btn-mobile drawer-close"><i class="icon icon--close"></i></button>
+        <div class="logo">
+            <a href="index.html"><img src="images/explanator-red.svg" alt="" /></a>
+        </div>
+        <div class="navbar--mobile">
+            <ul class="navbar-inner">
+                <li class="navbar-item"><a href="courses_open.html">Szkolenia otwarte</a></li>
+                <li class="navbar-item"><a href="courses_closed.html">Szkolenia zamknięte</a></li>
+                <li class="navbar-item"><a href="publications.html">Publikacje</a></li>
+                <li class="navbar-item"><a href="about_us.html">O nas</a></li>
+                <li class="navbar-item"><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <hr />
+        <ul class="list list--social">
+            <li class="list-item list-item--facebook"><a href="https://www.facebook.com/Explanator" target="_blank"><i class="icon icon--facebook"></i></a></li>
+            <li class="list-item list-item--linkedin"><a href="https://www.linkedin.com/company/explanator" target="_blank"><i class="icon icon--linkedin"></i></a></li>
+        </ul>
     </div>
 </header>
 
@@ -57,11 +79,11 @@
         <div class="contentbox-header-hld">
             <div class="container">
                 <div class="row">
-                    <figure class="col-sm-4 col-lg-4 contentbox-image-hld">
+                    <figure class="col-sm-3 col-md-6 col-lg-4 contentbox-image-hld">
                         <span class="label label-itembox">szkolenie zamknięte</span>
                         <img src="https://via.placeholder.com/380x285/ddd/000.png" alt="" />
                     </figure>
-                    <header class="col-sm-8 col-lg-8 contentbox-header">
+                    <header class="col-md-6 col-lg-8 contentbox-header">
                         <div class="contentbox-title-hld">
                             <h1 class="title"><a href="#">Ocena okresowa pracowników</a></h1>
                             <h2 class="subtitle">Praktyczne narzędzie w zarządzaniu zasobami ludzkimi</h2>
@@ -163,7 +185,7 @@
 <footer class="footersite">
     <div class="container">
         <div class="footersite-data row">
-            <div class="col-sm-6 col-md-3">
+            <div class="col-12 col-md-6 col-lg-3 data-organization">
                 <div class="logo">
                     <a href="index.html"><img src="images/explanator-turquoise.svg" class="img-fluid" alt="" /></a>
                 </div>
@@ -173,7 +195,7 @@
                     <li class="list-item"><i class="icon icon--location"></i>Kościelna 30 lok. 59</li>
                 </ul>
             </div>
-            <div class="col-sm-6 col-md-5">
+            <div class="col-12 col-md-6 col-lg-5 data-nav">
                 <div class="header">
                     <h6 class="header-title header-title--section  header-title--white"><span>Na skróty</span></h6>
                 </div>
@@ -196,7 +218,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-12 col-md-4">
+            <div class="col-12 col-md-12 col-lg-4 data-newsletter">
                 <div class="header">
                     <h6 class="header-title header-title--section header-title--white"><span>Newsletter</span></h6>
                 </div>

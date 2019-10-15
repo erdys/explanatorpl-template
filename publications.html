@@ -7,18 +7,20 @@
     <title>Explanator - Szkolenia otwarte, szkolenia zamknięte i kursy on-line</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/dev.css" />
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/drawer/drawer.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="js/modernizr-custom.js"></script>
+    <script src="vendor/iscroll/iscroll.min.js"></script>
+    <script src="vendor/drawer/drawer.min.js"></script>
 </head>
 
-<body>
+<body class="drawer drawer--left">
 
 <header class="headersite">
     <div class="headersite-top">
@@ -27,9 +29,7 @@
                 <ul class="nav-help">
                     <li class="nav-help-item"><i class="icon icon--email"></i><a href="mailto:biuro@explanator.pl">biuro@explanator.pl</a></li>
                     <li class="nav-help-item"><i class="icon icon--phone"></i>tel. (61) 85 50 112</li>
-                    <li class="nav-help-item"><i class="icon icon--help"></i><a href="#">Pomoc</a></li>
-                    <li class="nav-help-item"><i class="icon icon--cart"></i><a href="#">Koszyk (0)</a></li>
-                    <li class="nav-help-item"><i class="icon icon--search"></i><a href="#">Szukaj</a></li>
+                    <li class="nav-help-item js-search"><i class="icon icon--search"></i>Szukaj</li>
                 </ul>
             </div>
         </div>
@@ -37,6 +37,7 @@
     <div class="headersite-bottom">
         <div class="container">
             <div class="row">
+                <button type="button" class="btn btn-mobile drawer-toggle"><i class="icon icon--menu"></i></button>
                 <div class="col logo">
                     <a href="index.html"><img src="images/explanator-red.svg" alt="" /></a>
                 </div>
@@ -49,8 +50,29 @@
                         <li class="navbar-item"><a href="contact.html">Kontakt</a></li>
                     </ul>
                 </nav>
+                <button type="button" class="btn btn-mobile js-search"><i class="icon icon--search"></i></button>
             </div>
         </div>
+    </div>
+    <div class="drawer-nav">
+        <button type="button" class="btn btn-mobile drawer-close"><i class="icon icon--close"></i></button>
+        <div class="logo">
+            <a href="index.html"><img src="images/explanator-red.svg" alt="" /></a>
+        </div>
+        <div class="navbar--mobile">
+            <ul class="navbar-inner">
+                <li class="navbar-item"><a href="courses_open.html">Szkolenia otwarte</a></li>
+                <li class="navbar-item"><a href="courses_closed.html">Szkolenia zamknięte</a></li>
+                <li class="navbar-item"><a href="publications.html">Publikacje</a></li>
+                <li class="navbar-item"><a href="about_us.html">O nas</a></li>
+                <li class="navbar-item"><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <hr />
+        <ul class="list list--social">
+            <li class="list-item list-item--facebook"><a href="https://www.facebook.com/Explanator" target="_blank"><i class="icon icon--facebook"></i></a></li>
+            <li class="list-item list-item--linkedin"><a href="https://www.linkedin.com/company/explanator" target="_blank"><i class="icon icon--linkedin"></i></a></li>
+        </ul>
     </div>
 </header>
 
@@ -76,10 +98,10 @@
                         <h3 class="itembox-header-subtitle">Windows of the World, 4. wydanie polskie. zaktualizowane i rozszerzone</h3>
                     </header>
                     <div class="itembox-body">
-                        <div class="col-lg-7 itembox-content">
+                        <div class="col-sm-12 col-md-7 itembox-content">
                             <p>Z końcem października 2019 roku ukaże się 4. wydanie legendarnej książki Kevina Zraly'ego "Kurs wiedzy o winie". Książka będzie dostępna WYŁĄCZNIE w sprzedaży wysyłkowej! W porównaniu do niedostępnych już wcześniejszych wydań tej książki jej objętość wzrosła do 450 stron, a dodatkowo doszły nowe rozdziały, w tym część poświęcona winom polskim autorstwa Wojciecha Bońkowskiego.</p>
                         </div>
-                        <div class="col-lg-5 itembox-action itembox-action--line">
+                        <div class="col-sm-12 col-md-5 itembox-action itembox-action--line">
                             <p class="price price--action">Cena: <span class="price-value">99</span> <span class="price-currency">zł</span> <span class="price-tax">netto</span></p>
                             <p><b>Autor:</b>
                                 Zespół autorów
@@ -102,10 +124,10 @@
                         <h3 class="itembox-header-subtitle">Praktyczne rozwiązania i rekomendacje, interpretacje, wykładnie orzecznictwo oraz wzorcowe formularze i dokumenty</h3>
                     </header>
                     <div class="itembox-body">
-                        <div class="col-lg-7 itembox-content">
+                        <div class="col-sm-12 col-md-7 itembox-content">
                             <p>Ta unikalna, zwarta publikacja stanowi kompendium wiedzy, którą każdy menadżer powinien posiadać w zasięgu ręki. Klarowny podział publikacji pozwala na przyjazną nawigację po zagadnieniach związanych z regulacjami Kodeksu spółek handlowych. Dodatkowo, w uporządkowany sposób przedstawiane są kluczowe aspekty odpowiedzialności prawnej kadry zarządzającej.</p>
                         </div>
-                        <div class="col-lg-5 itembox-action itembox-action--line">
+                        <div class="col-sm-12 col-md-5 itembox-action itembox-action--line">
                             <p class="price price--action">Cena: <span class="price-value">261,45</span> <span class="price-currency">zł</span> <span class="price-tax">netto</span></p>
                             <p><b>Autor:</b>
                                 Zespół autorów
@@ -128,10 +150,10 @@
                         <h3 class="itembox-header-subtitle">Praktyczne rozwiązania i rekomendacje, interpretacje, wykładnie orzecznictwo oraz wzorcowe formularze i dokumenty</h3>
                     </header>
                     <div class="itembox-body">
-                        <div class="col-lg-7 itembox-content">
+                        <div class="col-sm-12 col-md-7 itembox-content">
                             <p>Ta unikalna, zwarta publikacja stanowi kompendium wiedzy, którą każdy menadżer powinien posiadać w zasięgu ręki. Klarowny podział publikacji pozwala na przyjazną nawigację po zagadnieniach związanych z regulacjami Kodeksu spółek handlowych. Dodatkowo, w uporządkowany sposób przedstawiane są kluczowe aspekty odpowiedzialności prawnej kadry zarządzającej.</p>
                         </div>
-                        <div class="col-lg-5 itembox-action itembox-action--line">
+                        <div class="col-sm-12 col-md-5 itembox-action itembox-action--line">
                             <p class="price price--action">Cena: <span class="price-value">261,45</span> <span class="price-currency">zł</span> <span class="price-tax">netto</span></p>
                             <p><b>Autor:</b>
                                 Zespół autorów
@@ -153,11 +175,11 @@
                         <h2 class="itembox-header-title"><a href="publications_details.html">Magazynowanie i Produkcja</a></h2>
                     </header>
                     <div class="itembox-body">
-                        <div class="col-lg-7 itembox-content">
+                        <div class="col-sm-12 col-md-7 itembox-content">
                             <p>Magazynowanie i Produkcja to nowe czasopismo, które podejmuje problematykę magazynowania, produkcji, controllingu i logistyki. Przekazujemy kompleksową wiedzę i rozwiązania stosowane w najlepszych firmach w kraju i za granicą.</p>
                             <p>Strona WWW magazynu --> <a href="https://www.magazyn-produkcja.pl/">https://www.magazyn-produkcja.pl/</a></p>
                         </div>
-                        <div class="col-lg-5 itembox-action itembox-action--line">
+                        <div class="col-sm-12 col-md-5 itembox-action itembox-action--line">
                             <p class="price price--action">Cena: <span class="price-value">193,32</span> <span class="price-currency">zł</span> <span class="price-tax">netto</span></p>
                             <p><b>Autor:</b>
                                 Zespół autorski
@@ -180,10 +202,10 @@
                         <h3 class="itembox-header-subtitle">Praktyczne rozwiązania i rekomendacje, interpretacje, wykładnie orzecznictwo oraz wzorcowe formularze i dokumenty</h3>
                     </header>
                     <div class="itembox-body">
-                        <div class="col-lg-7 itembox-content">
+                        <div class="col-sm-12 col-md-7 itembox-content">
                             <p>Kwartalnik skierowany do handlowców, którzy chcieliby poprawić swoją znajomość biznesowego języka angielskiego oraz osiągać coraz lepsze wyniki.</p>
                         </div>
-                        <div class="col-lg-5 itembox-action itembox-action--line">
+                        <div class="col-sm-12 col-md-5 itembox-action itembox-action--line">
                             <p class="price price--action">Cena: <span class="price-value">124,95</span> <span class="price-currency">zł</span> <span class="price-tax">netto</span></p>
                             <p><b>Autor:</b>
                                 Zespół autorski
@@ -221,7 +243,7 @@
 <footer class="footersite">
     <div class="container">
         <div class="footersite-data row">
-            <div class="col-sm-6 col-md-3">
+            <div class="col-12 col-md-6 col-lg-3 data-organization">
                 <div class="logo">
                     <a href="index.html"><img src="images/explanator-turquoise.svg" class="img-fluid" alt="" /></a>
                 </div>
@@ -231,7 +253,7 @@
                     <li class="list-item"><i class="icon icon--location"></i>Kościelna 30 lok. 59</li>
                 </ul>
             </div>
-            <div class="col-sm-6 col-md-5">
+            <div class="col-12 col-md-6 col-lg-5 data-nav">
                 <div class="header">
                     <h6 class="header-title header-title--section  header-title--white"><span>Na skróty</span></h6>
                 </div>
@@ -254,7 +276,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-12 col-md-4">
+            <div class="col-12 col-md-12 col-lg-4 data-newsletter">
                 <div class="header">
                     <h6 class="header-title header-title--section header-title--white"><span>Newsletter</span></h6>
                 </div>

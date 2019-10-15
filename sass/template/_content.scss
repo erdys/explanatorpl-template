@@ -121,6 +121,11 @@
             border: 1px solid #dddddd;
             border-top: none;
         }
+        &.open-training {
+            p.city {
+                padding-right: 40px;
+            }
+        }
     }
     &--register {
         .contentbox-main-hld {
@@ -143,13 +148,27 @@
             }
         }
         .event-details {
+            @include display-flex;
+            flex-wrap: wrap;
             p {
+                @include display-flex;
                 margin-bottom: 0;
                 color: #ffffff;
-                display: inline-block;
+                &.city {
+
+                    i,
+                    span {
+                    }
+                }
+                &.location {
+                    i,
+                    span {
+                    }
+                }
             }
             .icon {
                 opacity: .7;
+
             }
             &--form {
                 .icon--calendar {
@@ -160,6 +179,11 @@
                 }
                 p {
                     color: #000000;
+                    &.location {
+                        @include respond-below(md) {
+                            margin-top: 1rem;
+                        }
+                    }
                 }
             }
 
@@ -195,6 +219,12 @@
                 &--form {
                     color: #000000;
                 }
+                @include respond-below(md) {
+                    font-size: 1.857rem;
+                }
+                @include respond-below(lg) {
+                    font-size: 1.857rem;
+                }
             }
             .subtitle {
                 margin: 15px 0;
@@ -203,6 +233,12 @@
                 font: italic 1.357rem/110% $font-title-sec;
                 &--form {
                     color: #4c4c4c;
+                }
+                @include respond-below(md) {
+                    font-size: 1.071rem;
+                }
+                @include respond-below(lg) {
+                    font-size: 1.071rem;
                 }
             }
         }
@@ -261,6 +297,17 @@
         z-index: 120;
         clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
         -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+        @include display-flex;
+        @include respond-below(sm) {
+            position: static;
+            top: 0;
+            right: 0;
+            clip-path: none;
+            -webkit-clip-path: none;
+        }
+        @include respond-below(xl) {
+            right: -20px;
+        }
         .label {
             padding: 5px 10px;
             font-size: 0.7857rem;
@@ -281,9 +328,10 @@
         &--top,
         &--bottom {
             .contentbox-action-hld {
-                @extend .d-flex;
-                @extend .justify-content-between;
-                @extend .align-items-center;
+                @include display-flex;
+                flex-wrap: wrap;
+                // @include justify-content(space-between);
+                // align-items: center;
             }
             .list--social {
                 margin: 0 0 0 10px;
@@ -317,8 +365,18 @@
         .header {
             margin: 30px 0;
         }
+        .row {
+            @include respond-below(lg) {
+                @include flex-direction(column-reverse);
+            }
+        }
         p {
             margin-bottom: 1.5rem;
+        }
+        .image {
+            img {
+                margin-bottom: 1rem;
+            }
         }
 
     }
@@ -328,7 +386,9 @@
             clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
         }
-
+        @include respond-below(md) {
+            display: none;
+        }
     }
     &-form {
         .header {
@@ -353,6 +413,8 @@
         }
     }
     .image {
+        align-items: center;
+        @include display-flex;
         a {
             img {
                 @include transition(all .2s);
@@ -368,12 +430,31 @@
     .is-odd {
         .image {
             text-align: right;
+            @include respond-above(md) {
+                padding-left: 30px;
+            }
+            @include respond-above(lg) {
+                padding-left: 60px;
+            }
+        }
+        @include respond-below(md) {
+            @include flex-direction(column-reverse);
         }
 
     }
     .is-even {
         .image {
             text-align: left;
+            text-align: right;
+            @include respond-above(md) {
+                padding-right: 30px;
+            }
+            @include respond-above(lg) {
+                padding-right: 60px;
+            }
+        }
+        @include respond-below(md) {
+            @include flex-direction(column-reverse);
         }
         @include flex-direction(row-reverse);
     }

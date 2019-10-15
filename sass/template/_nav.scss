@@ -22,6 +22,21 @@
                 text-decoration: none;
             } 
         }
+        @include respond-below(xl) {
+            font-size: 1.071rem;
+            a {
+                padding: 30px 15px
+            }
+        }
+    }
+    &--mobile {
+        .navbar-item {
+            display: block;
+            a {
+                padding: 20px 20px;
+            }
+        }
+
     }
 }
 
@@ -45,7 +60,9 @@
             } 
         }
     }
-
+    @include respond-below(xl) {
+        font-size: 0.7857rem;
+    }
 }
 
 .nav-bull {
@@ -69,6 +86,42 @@
             height: 9px;
             display: inline-block;
             @include inline-svg-icon("icon-arrow-right", #059b99, center, 5px 9px);
+        
+}    }
+    @include respond-below(xl) {
+        font-size: 0.7857rem;
+    }
+}
+
+.drawer-nav {
+    width: 80%;
+    .logo {
+        margin: 20px 0;
+        text-align: center;
+        img 
+{            width: auto;
+            height: 40px;
         }
     }
+    hr {
+        width: 90%;
+        border-top: 1px dashed #dddddd;
+    }
+    .list--social {
+        margin: 10px 0;
+        display: block;
+        text-align: center;
+        .list-item {
+            margin: 0 5px;
+        }
+    }
+    .drawer-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+.drawer--left .drawer-nav {
+    left: -80%;
 }

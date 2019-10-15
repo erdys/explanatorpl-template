@@ -1,3 +1,24 @@
+$(document).ready(function() {
+    $('.drawer').drawer();
+});
+
+$('.drawer-close').click(function(e) {
+    e.preventDefault();
+    $('.drawer').drawer('close');
+});
+
+$('.input-number-increment').click(function() {
+    var $input = $(this).parents('.input-group').find('.input-number');
+    var val = parseInt($input.val(), 10);
+    $input.val(val + 1);
+});
+
+$('.input-number-decrement').click(function() {
+    var $input = $(this).parents('.input-group').find('.input-number');
+    var val = parseInt($input.val(), 10);
+    $input.val(val - 1);
+})
+
 $('.dropdown-menu li a').click(function(){
     var selText = $(this).text();
     $(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <i class="icon icon--arrow-down"></i>');
@@ -26,6 +47,7 @@ $('.js-popup-show').click(function(e) {
         var forms = document.getElementsByClassName('needs-validation');
         var validation = Array.prototype.filter.call(forms, function(form) {
             form.addEventListener('submit', function(event) {
+                console.log('dupa');
                 if (form.checkValidity() === false) {
                     event.preventDefault();
                     event.stopPropagation();
