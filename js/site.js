@@ -16,7 +16,9 @@ $('.input-number-increment').click(function() {
 $('.input-number-decrement').click(function() {
     var $input = $(this).parents('.input-group').find('.input-number');
     var val = parseInt($input.val(), 10);
-    $input.val(val - 1);
+    if(val > 1) {
+        $input.val(val - 1);
+    }
 })
 
 $('.dropdown-menu li a').click(function(){
