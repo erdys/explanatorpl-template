@@ -17,12 +17,13 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.0",
     "gulp-imagemin": "^6.1.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "gulp-sass-inline-svg": "^1.0.3",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-svgmin": "^2.2.0",
     "gulp.spritesmith": "^6.11.0",
     "merge-stream": "^2.0.0",
+    "sass": "^1.64.2",
     "vinyl-buffer": "^1.0.1"
   }
 }
